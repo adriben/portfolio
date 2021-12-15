@@ -1,7 +1,12 @@
 <template>
   <div class="home">
      <TheHeader></TheHeader>
-   <img src="..\assets\coding-vs-programming-2.jpg" alt="picture of a web developer">
+     <section class="banniere col-12 hero">
+        <div class="hero-text">
+          <p>Adrien Benete</p>
+          <h1 class="pt-4 text-center">Front end developer in Fukuoka</h1>
+        </div>
+      </section>
    <div class="container">
      <h2>About me</h2>
      <p class="pb-5">Inspired by the creative aspect of Web Developing, I recently completed an online program with Openclassrooms. 
@@ -17,7 +22,7 @@
        <img src="../assets/mysql.png" alt="logo mysql" class="logo">
        <img src="../assets/mongo.png" alt="logo mongodb" class="logo">
        <img src="../assets/node.png" alt="logo node" class="logo">
-       
+      
 
        
    </div>
@@ -78,6 +83,7 @@
     <a href="#" class="btn btn-primary">Go somewhere</a>
     
     
+    
   </div>
 </div>
 <div class="card mb-5">
@@ -103,12 +109,18 @@
 
 <script>
 // @ is an alias to /src
-import TheHeader from '@/components/TheHeader.vue'
+
+import TheHeader from '@/components/TheHeader.vue';
+
+
+
 
 export default {
   name: 'Home',
   components: {
-    "TheHeader": TheHeader
+    "TheHeader": TheHeader,
+
+  
   }
 }
 </script>
@@ -116,9 +128,54 @@ export default {
 
 img{
   width: 100%;
+  
   margin: auto;
   max-width: 1700px;
   object-fit: cover;
+}
+
+.hero{
+    color: white;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/shutterstock_1122339353.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+
+    .hero-text{
+        position: absolute;
+        
+        
+        align-items: center;
+        top: 20%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+    p{
+        font-size: 140%;
+        top: 20%;
+        left: 70%;
+        
+      
+    }
+    
+    a{
+        background-color: white;
+        color: black;
+        text-align: center;
+        width: fit-content;
+        animation: slow-display ease-out 3000ms ;
+        transition: 700ms;
+        &:hover{
+            transform: scale(1.1);
+            transition: 700ms;
+        }
+    }
+  }}
+.banner{
+  height: 700px;
 }
 .logo{
   width: 80px;
@@ -139,12 +196,19 @@ img{
 .card{
   width: 40rem;
   position: relative;
-  border: solid 1px rgba(128, 128, 128, 0.678);
   z-index: 1;
-  border-radius: 5px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 7px rgba(63, 62, 62, 0.596);
+  transition: 400ms;
+  &:hover{
+    transform: scale(1.05);
+    transition: 400ms;
+  }
 
   
   .card-img-top {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     height: 30rem;
     object-fit: cover;
     
