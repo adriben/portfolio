@@ -75,7 +75,7 @@
   </div>
 </div>
 <div class="card mb-5">
-  <img class="card-img-top" src="..\assets\coding-vs-programming-2.jpg" alt="Card image cap">
+  <img class="card-img-top" src="..\assets\lachouetteagence.png" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">Optimize an Existing Website (La Chouette agence)</h5>
     <p class="card-text">Research and implement current best practices and standards in web development, including SEO, size and speed, and accessibility.</p>
@@ -85,18 +85,76 @@
     <img src="../assets/analytics.png" alt="logo analytics" class="logo analytics">
 
     </div>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <a href="#" class="btn btn-primary mr-5">Code after optimization</a>
+    <a href="#" class="btn btn-secondary ml-3">Code before optimization</a>
+    <img class="performance" src="../assets/performance.png" alt="iphone picture" id="performance">
     
     
     
   </div>
 </div>
 <div class="card mb-5">
-  <img class="card-img-top" src="..\assets\coding-vs-programming-2.jpg" alt="Card image cap">
+  <img class="card-img-top" src="..\assets\orinocamera.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Build an e-commerce Website with JavaScript</h5>
+    <p class="card-text">Created the desing and use an API to collect information about products and add a cart feature for purchases.</p>
+    <div class="pb-3">
+       
+    <img src="../assets/html.png" alt="logo html" class="logo">
+       <img src="../assets/css.png" alt="logo css" class="logo css">
+       <img src="../assets/sass.png" alt="logo sass" class="logo">
+       <img src="../assets/bootstrap.png" alt="logo bootstrap" class="logo">
+       <img src="../assets/js.png" alt="logo javascript" class="logo">
+       <img src="../assets/ux.png" alt="logo design" class="logo ux">
+
+    </div>
+    <a href="#" class="btn btn-primary mr-5">Check the video Demo</a>
+    <a href="#" class="btn btn-secondary ml-3">Check the code</a>
+    
+    
+  </div>
+</div>
+
+<div class="card mb-5">
+  <img class="card-img-top" src="..\assets\hotsauce.png" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">Optimize an Existing Website (La Chouette agence)</h5>
     <p class="card-text">Research and implement current best practices and standards in web development, including SEO, size and speed, and accessibility.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <div class="pb-3">
+       
+    <img src="../assets/node.png" alt="logo node" class="logo node">
+    <img src="../assets/mongo.png" alt="logo mongo" class="logo mongo">
+    
+
+    </div>
+    <a href="#" class="btn btn-primary mr-5">Check the video Demo</a>
+    <a href="#" class="btn btn-secondary ml-3">Check the code</a>
+
+    
+    
+    
+  </div>
+</div>
+
+<div class="card mb-5">
+  <img class="card-img-top" src="..\assets\shutterstock_1122339353.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Optimize an Existing Website (La Chouette agence)</h5>
+    <p class="card-text">Research and implement current best practices and standards in web development, including SEO, size and speed, and accessibility.</p>
+    <div class="pb-3">
+       
+    <img src="../assets/logo.png" alt="logo vue" class="logo">
+    <img src="../assets/vuex.png" alt="logo vue" class="logo">
+    <img src="../assets/mysql.png" alt="logo mysql" class="logo">
+    <img src="../assets/node.png" alt="logo node" class="logo node">
+    <img src="../assets/ux.png" alt="logo design" class="logo ux">
+    
+
+    </div>
+    <a href="#" class="btn btn-primary mr-5">Check the video Demo</a>
+    <a href="#" class="btn btn-secondary ml-3">Check the code</a>
+
+    
     
     
   </div>
@@ -132,7 +190,7 @@ export default {
       typeArray: ['Front end', 'Full stack', 'Design'],
       typingSpeed: 200,
       erasingSpeed: 100,
-      newTextDelay: 2000,
+      newTextDelay: 1500,
       typeArrayIndex: 0,
       charIndex: 0
 
@@ -215,7 +273,7 @@ img{
         margin-left: 3px;
         width: 4px;
         background-color: #fff;
-        animation: cursorBlink 1s infinite;
+        animation: cursorBlink 800ms infinite;
         
       }
       span.cursor.typing{
@@ -267,6 +325,7 @@ img{
     border-top-right-radius: 20px;
     height: 30rem;
     object-fit: cover;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.308);
     
   }
   .logo{
@@ -277,8 +336,20 @@ img{
   .css{
     width: 50px;
   }
+  .ux{
+    width: 90px;
+    position: absolute;
+  }
   .analytics{
     width: 7rem;
+  }
+  .mongo{
+    width: 9rem;
+    padding-left: 1rem;
+  }
+  .node{
+
+    width: 6rem;
   }
   .reservia{
       object-fit: cover;
@@ -297,6 +368,19 @@ img{
       top: 270px;
       right: 20px;
       background-size: 8rem;
+      border-radius: 15px;
+     box-shadow: 5px 3px 5px rgba(63, 62, 62, 0.596);
+      z-index: 3;
+
+    }
+    .performance{
+      height: 16rem;
+      width: 25rem;
+      position: absolute;
+      top: 230px;
+      right: -40px;
+      background-size: 8rem;
+      border: grey 1px solid;
       border-radius: 15px;
      box-shadow: 5px 3px 5px rgba(63, 62, 62, 0.596);
       z-index: 3;
