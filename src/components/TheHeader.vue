@@ -1,6 +1,6 @@
 <template>
      <header class="bg-dark">
-        <div class="container">
+        <div class="">
           <div>
             <nav class="navbar navbar-expand-lg navbar-dark">
               <a class="navbar-brand" href="">
@@ -22,8 +22,13 @@
                   </li>
                   <li class="nav-item text-right active">
                       
-                    <a class="nav-link" href=""><i class="fas fa-language"></i>日本語 </a>
+                    <a class="nav-link" href="">Contact</a>
                   </li>
+                  <li class="nav-item text-right active pl-5">
+                      
+                    <a class="nav-link" href="">日本語 </a>
+                  </li>
+                  
                 </ul>
               </div>
             </nav>
@@ -43,11 +48,24 @@ export default {
 <style lang="scss">
 header {
     font-size: 130%;
+    position: fixed;
+    z-index: 4;
+    width: 100%;
+    
    
     a{
 
     color: #ffff;
     padding-left: 1rem;
+    transition: 400ms;
+    &:hover{
+    transform: scale(1.15);
+    transition: 400ms;
+  }
+  
+   }
+   ul{
+     margin-right: 0;
    }
    li{
       padding-left: 2rem;

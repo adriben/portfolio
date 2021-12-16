@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-     <TheHeader></TheHeader>
+     <TheHeader class="mb-4"></TheHeader>
      <section class="banniere col-12 hero">
         <div class="hero-text">
           <p>Hi, my name is Adrien</p>
@@ -58,8 +58,8 @@
 
     </div>
    
-    <a href="#" class="btn btn-primary mr-5">Check the webpage</a>
-    <a href="#" class="btn btn-secondary ml-3">Check the code</a>
+    <a href="https://adriben.github.io/AdrienBenete_2_27072021/" class="btn btn-primary">Check the webpage</a>
+    <a href="https://github.com/adriben/AdrienBenete_2_27072021" class="btn btn-secondary ml-3">Check the code</a>
     <img class="iphone" src="../assets/iphone.png" alt="iphone picture" id="reservia">
     
   </div>
@@ -76,8 +76,8 @@
     <img src="../assets/sass.png" alt="logo sass" class="logo" data-aos="fade-right">
 
     </div>
-    <a href="#" class="btn btn-primary mr-5">Check the webpage</a>
-    <a href="#" class="btn btn-secondary ml-3">Check the code</a>
+    <a href="https://adriben.github.io/AdrienBenete_3_15082021/" class="btn btn-primary">Check the webpage</a>
+    <a href="https://github.com/adriben/AdrienBenete_3_15082021"  class="btn btn-secondary ml-3">Check the code</a>
     <img class="iphone" src="../assets/iphone.png" alt="iphone picture" id="ohmyfood">
     
     
@@ -94,8 +94,8 @@
     <img src="../assets/analytics.png" alt="logo analytics" class="logo analytics" data-aos="fade-right">
 
     </div>
-    <a href="#" class="btn btn-primary mr-5">Code after optimization</a>
-    <a href="#" class="btn btn-secondary ml-3">Code before optimization</a>
+    <a href="https://github.com/adriben/AdrienBenete_4_27082021" class="btn btn-primary">Code after optimization</a>
+    <a href="https://github.com/adriben/chouetteAgenceBEFORE" class="btn btn-secondary ml-3">Code before optimization</a>
     <img class="performance" src="../assets/performance.png" alt="iphone picture" id="performance">
     
     
@@ -117,8 +117,8 @@
        <img src="../assets/ux.png" alt="logo design" class="logo ux" data-aos="fade-right">
 
     </div>
-    <a href="#" class="btn btn-primary mr-5">Check the video Demo</a>
-    <a href="#" class="btn btn-secondary ml-3">Check the code</a>
+    <a href="#" class="btn btn-primary mr-3">Check the video Demo</a>
+    <a href="https://github.com/adriben/AdrienBenete_5_27092021/tree/main/frontend" class="btn btn-secondary">Check the code</a>
     
     
   </div>
@@ -136,8 +136,8 @@
     
 
     </div>
-    <a href="#" class="btn btn-primary mr-5">Check the video Demo</a>
-    <a href="#" class="btn btn-secondary ml-3">Check the code</a>
+    <a href="#" class="btn btn-primary">Check the video Demo</a>
+    <a href="https://github.com/adriben/AdrienBenete_6_26102021/tree/main/backend" class="btn btn-secondary ml-3">Check the code</a>
 
     
     
@@ -160,8 +160,8 @@
     
 
     </div>
-    <a href="#" class="btn btn-primary mr-5">Check the video Demo</a>
-    <a href="#" class="btn btn-secondary ml-3">Check the code</a>
+    <a href="#" class="btn btn-primary">Check the video Demo</a>
+    <a href="https://github.com/adriben/AdrienBenete_7_19112021-" class="btn btn-secondary ml-3">Check the code</a>
 
     
     
@@ -172,6 +172,16 @@
 
 
    </div>
+   <div class="text-center">
+     <h2>Contact</h2>
+     <Contact></Contact>
+
+   </div>
+   <div class="text-center">
+    <h3>Hobbies</h3>
+   <Hobbies class="container"></Hobbies>
+   </div>
+   
    <footer>
      Footer
    </footer>
@@ -183,6 +193,8 @@
 // @ is an alias to /src
 
 import TheHeader from '@/components/TheHeader.vue';
+import Hobbies from '@/components/Hobbies.vue';
+import Contact from '@/components/Contact.vue'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -194,6 +206,8 @@ export default {
   name: 'Home',
   components: {
     "TheHeader": TheHeader,
+    "Hobbies": Hobbies,
+    "Contact": Contact
   },
   data:() =>{
     return{
@@ -264,19 +278,20 @@ img{
 }
 
 .hero{
+  
     color: white;
     background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/shutterstock_1122339353.jpg");
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 700px;
+    height: 800px;
     width: 100%;
     position: relative;
 
     .hero-text{
         position: absolute;        
         align-items: center;
-        top: 10%;
+        top: 30%;
         left: 60%;
     p{
       position: absolute;
@@ -319,7 +334,7 @@ img{
   border-radius: 150px;
   position: absolute;
   left: 260px;
-  top: 810px
+  top: 890px
 }
 .aboutMePar{
   font-size: 120%;
