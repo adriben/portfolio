@@ -1,22 +1,22 @@
 <template>
     <div class="hobbies">
         <div class="hobbies-el">
-<i class="fas fa-chess"></i>
+<i class="fas fa-chess" data-aos="zoom-in"></i>
 <p>Chess</p>
         </div>
 <div class="hobbies-el">
-<i class="fas fa-bicycle"></i>
+<i class="fas fa-bicycle" data-aos="zoom-in"></i>
 <p>Cycling</p>
 </div>
 
 <div class="hobbies-el">
-    <i class="fas fa-camera-retro"></i>
+    <i class="fas fa-camera-retro" data-aos="zoom-in"></i>
     <p>Photographie</p>
 
 </div>
 
 <div class="hobbies-el">
-<i class="fas fa-film"></i>
+<i class="fas fa-film" data-aos="zoom-in"></i>
 <p>Cinema</p>
 </div>
 

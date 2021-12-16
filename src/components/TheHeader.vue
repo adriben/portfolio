@@ -18,11 +18,11 @@
                   </li>
                   <li class="nav-item text-right active">
                       
-                    <a class="nav-link" href=""><i class="fas fa-palette"></i> My works</a>
+                    <a class="nav-link" href="#myWorks"><i class="fas fa-palette"></i> My works</a>
                   </li>
                   <li class="nav-item text-right active">
                       
-                    <a class="nav-link" href="">Contact</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                   </li>
                   <li class="nav-item text-right active pl-5">
                       

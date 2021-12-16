@@ -9,13 +9,13 @@
           I am a Web developer
             <br>
             <span class="typed-text">{{ typeValue }}</span>
-            <span class="cursor" :class="{'typing': typeStatus }">&nbsp;</span>
+            <span class="cursor"  :class="{'typing': typeStatus }">&nbsp;</span>
            </h1>
         </div>
       </section>
-      <img src="../assets/id.png" alt="id picture" class="id-pic" data-aos="zoom-in" data-aos-duration="1800">
+      <img  src="../assets/id.png" alt="id picture" class="id-pic" data-aos="zoom-in" data-aos-duration="1800">
    <div class="container" id="aboutMe">
-     <h2  class="mt-5 pt-2 text-center">About me</h2>
+     <h2  class="mt-5 pt-3 text-center">About me ✍🏻</h2>
      <p class="aboutMePar">Inspired by the creative aspect of Web Developing, I recently completed an online program with Openclassrooms. 
        I am mainly focused on frontend but I also acquired some skills in backend developement with Node Js. 
        I am really motivated and eager to learn, and most of all I enjoy coding</p>
@@ -23,7 +23,7 @@
         <a href="#" class="btn btn-secondary text-center"><i class="fas fa-download"></i> Download my resume in PDF</a>
        </div>
        
-       <h2 class="text-center pb-3">My Skills</h2>
+       <h2 class="text-center pb-3">My Skills 💪🏻</h2>
        <div class="text-center">
        <img src="../assets/html.png" alt="logo html" class="logo htmlD" data-aos="zoom-in-up" data-aos-duration="2400">
        <img src="../assets/css.png" alt="logo css" class="logo css cssD" data-aos="zoom-in-up" data-aos-duration="2000">
@@ -41,7 +41,7 @@
        
    </div>
    <br>
-   <h2 class="text-center pt-4 mb-5">My works</h2>
+   <h2 class="text-center pt-4 mb-5 mt-3" id="myWorks">My works <span>🚀</span></h2>
    <br>
    <div class="row">
 
@@ -172,13 +172,13 @@
 
 
    </div>
-   <div class="text-center">
-     <h2>Contact</h2>
+   <div class="text-center" id="contact">
+     <h2>Contact ☎️</h2>
      <Contact></Contact>
 
    </div>
-   <div class="text-center">
-    <h3>Hobbies</h3>
+   <div class="text-center mt-4">
+    <h3>Hobbies 🏖</h3>
    <Hobbies class="container"></Hobbies>
    </div>
    
@@ -451,6 +451,13 @@ img{
     }
 }
 
+.phone{
+    animation: shake 3s;
+    color: red;
+
+  animation-iteration-count: infinite;
+}
+
 @keyframes cursorBlink{
   49%{ background-color: #fff;}
   50% {background-color: transparent;  }
@@ -462,28 +469,15 @@ img{
     transform: translateX(-100px);
     opacity: 0;
 
+  } 50%{
+    transform: translateX(-100px);
+    opacity: 0;
   }
   100%{
     transform: translateX(0);
     opacity: 1;
   }
 }
-@keyframes shake {
-  10%, 90% {
-    transform: translate3d(-1px, 0, 0);
-  }
-  
-  20%, 80% {
-    transform: translate3d(2px, 0, 0);
-  }
 
-  30%, 50%, 70% {
-    transform: translate3d(-4px, 0, 0);
-  }
-
-  40%, 60% {
-    transform: translate3d(4px, 0, 0);
-  }
-}
 
 </style>
