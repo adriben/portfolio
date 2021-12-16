@@ -14,7 +14,7 @@
                 <ul class="navbar-nav">
                   <li class="nav-item active">
                       
-                    <a class="nav-link" href=""><i class="fas fa-address-card"></i> About Me</a>
+                    <a class="nav-link" href="#aboutMe"><i class="fas fa-address-card"></i> About Me</a>
                   </li>
                   <li class="nav-item text-right active">
                       

@@ -16,7 +16,7 @@ export default {
 <style lang="scss">
 *{
   margin: auto;
-  max-width: 1700px;
+  max-width: 1900px;
 }
 
 </style>
