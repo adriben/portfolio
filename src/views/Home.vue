@@ -17,8 +17,8 @@
    <div class="container" id="aboutMe">
      <h2  class="mt-5 pt-3 text-center">About me ✍🏻</h2>
      <p class="aboutMePar">Inspired by the creative aspect of Web Developing, I recently completed an online program with Openclassrooms. 
-       I am mainly focused on frontend but I also acquired some skills in backend developement with Node Js. 
-       I am really motivated and eager to learn, and most of all I enjoy coding</p>
+       I am mainly focused on frontend but I also acquired some skills in backend developement with Node Js (Express). 
+       I am really motivated and eager to learn, and most of all I enjoy coding. I am based in Fukuoka Japan since 2019, although I recently passed the JPLT N2, I am still learning japanese every days.</p>
        <div class="text-center mb-5 pb-3">
         <a href="#" class="btn btn-secondary text-center"><i class="fas fa-download"></i> Download my resume in PDF</a>
        </div>
@@ -117,7 +117,7 @@
        <img src="../assets/ux.png" alt="logo design" class="logo ux" data-aos="fade-right">
 
     </div>
-    <a href="#" class="btn btn-primary mr-3">Check the video Demo</a>
+    <a href="https://youtu.be/VQOkRmA3UsE" class="btn btn-primary mr-3">Check the video Demo</a>
     <a href="https://github.com/adriben/AdrienBenete_5_27092021/tree/main/frontend" class="btn btn-secondary">Check the code</a>
     
     
@@ -136,7 +136,7 @@
     
 
     </div>
-    <a href="#" class="btn btn-primary">Check the video Demo</a>
+    <a href="https://youtu.be/wP7ak2om1L8" class="btn btn-primary">Check the video Demo</a>
     <a href="https://github.com/adriben/AdrienBenete_6_26102021/tree/main/backend" class="btn btn-secondary ml-3">Check the code</a>
 
     
@@ -338,6 +338,7 @@ img{
 }
 .aboutMePar{
   font-size: 120%;
+  font-family: 'Fuzzy Bubbles', cursive;
 }
 .logo{
   width: 80px;

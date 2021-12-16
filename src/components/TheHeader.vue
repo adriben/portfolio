@@ -3,10 +3,10 @@
         <div class="">
           <div>
             <nav class="navbar navbar-expand-lg navbar-dark">
-              <a class="navbar-brand" href="">
+              <p class="navbar-brand">
                 <i class="fas fa-laptop"></i>
                 Web developer in Fukuoka
-              </a>
+              </p>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -22,7 +22,7 @@
                   </li>
                   <li class="nav-item text-right active">
                       
-                    <a class="nav-link" href="#contact">Contact</a>
+                    <a class="nav-link" href="#contact"><i class="fas fa-phone"></i> Contact</a>
                   </li>
                   <li class="nav-item text-right active pl-5">
                       
