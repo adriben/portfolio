@@ -26,6 +26,10 @@ export default {
 
 .btn-primary{
   background-color: rgb(44, 117, 81);
+  &:hover{
+background-color: rgb(77, 158, 117);
+color: black;
+  }
 }
 
 
