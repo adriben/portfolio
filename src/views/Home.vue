@@ -13,7 +13,7 @@
            </h1>
         </div>
       </section>
-      <img  src="../assets/profilePic.png" alt="id picture" class="id-pic" data-aos="zoom-in" data-aos-duration="1800">
+      <img  src="../assets/profilePic.jpg" alt="id picture" class="id-pic" data-aos="zoom-in" data-aos-duration="1800">
    <div class="container" id="aboutMe">
      <h2  class="mt-5 pt-3 text-center">About me ✍🏻</h2>
      <p class="aboutMePar">Inspired by the creative aspect of Web Developing, I recently completed an online program with Openclassrooms. 
