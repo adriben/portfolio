@@ -8,7 +8,7 @@
     <a href="https://www.linkedin.com/in/adrien-b%C3%A9n%C3%A9t%C3%A9-479b54217/">
 <i class="fab fa-linkedin"></i>
 
-<p>My linkedin profile</p>
+<p>My linkedin profile</p> 
 </a>
 </div>
 
