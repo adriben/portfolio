@@ -158,6 +158,7 @@
     <img src="../assets/node.png" alt="logo node" class="logo node" data-aos="fade-right">
     <img src="../assets/ux.png" alt="logo design" class="logo ux " data-aos="fade-right">
     
+    
 
     </div>
     <a href="https://youtu.be/reHb5I7fNpc" class="btn btn-primary">Check the video Demo</a>
