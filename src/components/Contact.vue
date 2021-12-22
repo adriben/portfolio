@@ -59,7 +59,15 @@ export default {
 
 <style lang='scss'>
 .contact{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    @media screen and (max-width: 970px) {
+        grid-template-columns: 1fr 1fr;
+  }
+  @media screen and (max-width: 500px) {
+        grid-template-columns: 1fr;
+  }
+    
     align-content: center;
     justify-content: center;
     .contact-el{

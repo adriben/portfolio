@@ -4,6 +4,7 @@
      <section class="banniere col-12 hero">
         <div class="hero-text">
           <p>Hi, my name is Adrien</p>
+          <br>
     
           <h1 class="pt-4 text-center">
           I am a Web developer
@@ -157,7 +158,7 @@
     <img src="../assets/vuex.png" alt="logo vue" class="logo" data-aos="fade-right">
     <img src="../assets/mysql.png" alt="logo mysql" class="logo" data-aos="fade-right">
     <img src="../assets/node.png" alt="logo node" class="logo node" data-aos="fade-right">
-    <img src="../assets/ux.png" alt="logo design" class="logo ux " data-aos="fade-right">
+    <img src="../assets/ux.png" alt="logo design designGroupo" class="logo ux " data-aos="fade-right">
     
     
 
@@ -295,17 +296,26 @@ img{
         align-items: center;
         top: 30%;
         left: 60%;
+         @media screen and (max-width: 900px) {
+        left:200px;
+  }
+     @media screen and (max-width: 560px) {
+        left:-1px;
+  }
     p{
       position: absolute;
         font-size: 200%;
         top: -20%;
         left: 10%;
         animation: slideDisplay 3s;
+       
         
       
     }
     h1{
       animation: slideDisplay 500ms;
+
+     
       span.cursor{
         display: inline-block;
         margin-left: 3px;
@@ -334,6 +344,9 @@ img{
   @media screen and (max-width: 1400px) {
    padding-top: 1rem;
   }
+  @media screen and (max-width: 950px) {
+       padding-top: 3.5rem;
+     }
 }
 .id-pic{
   width: 8rem;
@@ -348,6 +361,14 @@ img{
   top: 0px;
 
   }
+  @media screen and (max-width: 1200px) {
+       left: 250px;
+       top: 0px;
+     }
+     @media screen and (max-width: 950px) {
+       left: 130px;
+       top: 0px;
+     }
 }
 .aboutMePar{
   font-size: 120%;
@@ -393,6 +414,9 @@ img{
   border-radius: 20px;
   box-shadow: 3px 3px 7px rgba(63, 62, 62, 0.596);
   transition: 400ms;
+  @media screen and (max-width: 570px) {
+        width: 100%;
+  }
 
   &:hover{
     transform: scale(1.05);
@@ -464,15 +488,17 @@ img{
       border-radius: 15px;
      box-shadow: 5px 3px 5px rgba(63, 62, 62, 0.596);
       z-index: 3;
-    //  @media screen and (max-width: 1720px) {
-    //    height: 10rem;
-    //   width: 20rem;
-    //   right: 0px;
-    //  }
+     @media screen and (max-width: 630px) {
+       height: 10rem;
+      width: 20rem;
+      right: 20px;
+      top: 320px;
+     }
 
     }
     #reservia{
       background-image: url("../assets/reserviaIphone1.png");
+      
     }
     #ohmyfood{
     

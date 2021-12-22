@@ -43,9 +43,16 @@ export default {
 
 <style lang='scss'>
 .hobbies{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     align-content: center;
     justify-content: center;
+    @media screen and (max-width: 970px) {
+        grid-template-columns: 1fr 1fr;
+  }
+  @media screen and (max-width: 500px) {
+        grid-template-columns: 1fr;
+  }
     .hobbies-el{
         margin: 1rem;
         font-size: 130%;
