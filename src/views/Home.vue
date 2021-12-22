@@ -13,12 +13,13 @@
            </h1>
         </div>
       </section>
-      <img  src="../assets/profilePic.jpg" alt="id picture" class="id-pic" data-aos="zoom-in" data-aos-duration="1800">
+     
    <div class="container" id="aboutMe">
      <h2  class="mt-5 pt-3 text-center">About me ✍🏻</h2>
+      <img  src="../assets/profilePic.jpg" alt="id picture" class="id-pic" data-aos="zoom-in" data-aos-duration="1800">
      <p class="aboutMePar">Inspired by the creative aspect of Web Developing, I recently completed an online program with Openclassrooms. 
        I am mainly focused on frontend but I also acquired some skills in backend developement with Node Js (Express). 
-       I am really motivated and eager to learn, and most of all I enjoy coding. I am based in Fukuoka Japan since 2019, although I recently passed the JPLT N2, I am still learning japanese every days.</p>
+       I am really motivated and eager to learn, and most of all I enjoy coding. I am based in Fukuoka Japan since 2019, although I recently passed the JLPT N2, I am still learning japanese every days.</p>
        <div class="text-center mb-5 pb-3">
         <a href="#" class="btn btn-secondary text-center"><i class="fas fa-download"></i> Download my resume in PDF</a>
        </div>
@@ -43,10 +44,10 @@
    <br>
    <h2 class="text-center pt-4 mb-5 mt-3" id="myWorks">My works <span>🚀</span></h2>
    <br>
-   <div class="row">
+   <div class="works">
 
      
-     <div class="card mb-5">
+     <div class="card mb-5 ">
   <img class="card-img-top reservia" src="..\assets\reservia.png" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">Reservia</h5>
@@ -328,14 +329,25 @@ img{
 .banner{
   height: 700px;
 }
+#aboutMe{
+  position: relative;
+  @media screen and (max-width: 1400px) {
+   padding-top: 1rem;
+  }
+}
 .id-pic{
   width: 8rem;
   height: 8rem;
  object-fit: cover;
   border-radius: 150px;
   position: absolute;
-  left: 260px;
-  top: 890px
+  left: -120px;
+  top: 50px;
+  @media screen and (max-width: 1400px) {
+   left: 350px;
+  top: 0px;
+
+  }
 }
 .aboutMePar{
   font-size: 120%;
@@ -359,10 +371,20 @@ img{
 }
 
 .btn-secondary{
-  background-color: #E27D60;
+  background-color: #d85c3ae0;
   
 }
 
+.works{
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr ;
+  @media screen and (max-width: 1900px) {
+   grid-template-columns:1fr 1fr; 
+  }
+  @media screen and (max-width: 1300px) {
+   grid-template-columns:1fr; 
+  }
+}
 
 .card{
   width: 35rem;
@@ -371,6 +393,7 @@ img{
   border-radius: 20px;
   box-shadow: 3px 3px 7px rgba(63, 62, 62, 0.596);
   transition: 400ms;
+
   &:hover{
     transform: scale(1.05);
     transition: 400ms;
@@ -441,6 +464,11 @@ img{
       border-radius: 15px;
      box-shadow: 5px 3px 5px rgba(63, 62, 62, 0.596);
       z-index: 3;
+    //  @media screen and (max-width: 1720px) {
+    //    height: 10rem;
+    //   width: 20rem;
+    //   right: 0px;
+    //  }
 
     }
     #reservia{

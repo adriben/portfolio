@@ -1,5 +1,5 @@
 <template>
-     <header class="bg-dark">
+     <header class="bg-dark ">
         <div class="">
           <div>
             <nav class="navbar navbar-expand-lg navbar-dark">
@@ -71,7 +71,6 @@ header {
       padding-left: 2rem;
    }
   .navbar-expand-lg .navbar-collapse{
-      padding-left: 15rem;
     justify-content: flex-end;
   }  
 }
