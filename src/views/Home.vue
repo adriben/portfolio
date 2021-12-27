@@ -18,9 +18,9 @@
    <div class="container" id="aboutMe">
      <h2  class="mt-5 pt-3 text-center">About me ✍🏻</h2>
       <img  src="../assets/profilePic.jpg" alt="id picture" class="id-pic" data-aos="zoom-in" data-aos-duration="1800">
-     <p class="aboutMePar">Inspired by the creative aspect of Web Developing, I recently completed an online program with Openclassrooms. 
+     <p class="aboutMePar">Inspired by the creative aspect of Web Developing, I recently graduated from an online program with Openclassrooms. 
        I am mainly focused on frontend but I also acquired some skills in backend developement with Node Js (Express). 
-       I am really motivated and eager to learn, and most of all I enjoy coding. I am based in Fukuoka Japan since 2019, although I recently passed the JLPT N2, I am still learning japanese every days.</p>
+       I am really motivated and eager to learn, and most of all I enjoy coding.  I used to live in France, China (3 years) and Australia (2 years), I am now based in Fukuoka Japan since 2019, although I recently passed the JLPT N2, I am still learning japanese every day. I can also speak english, french and chinese.</p>
        <div class="text-center mb-5 pb-3">
         <a :href="`${publicPath}Benete2022.pdf`" class="btn btn-secondary text-center" download="Benete2022.pdf"><i class="fas fa-download"></i> Download my resume in PDF</a>
        </div>
