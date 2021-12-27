@@ -22,7 +22,7 @@
        I am mainly focused on frontend but I also acquired some skills in backend developement with Node Js (Express). 
        I am really motivated and eager to learn, and most of all I enjoy coding. I am based in Fukuoka Japan since 2019, although I recently passed the JLPT N2, I am still learning japanese every days.</p>
        <div class="text-center mb-5 pb-3">
-        <a href="#" class="btn btn-secondary text-center"><i class="fas fa-download"></i> Download my resume in PDF</a>
+        <a :href="`${publicPath}Benete2022.pdf`" class="btn btn-secondary text-center" download="Benete2022.pdf"><i class="fas fa-download"></i> Download my resume in PDF</a>
        </div>
        
        <h2 class="text-center pb-3">My Skills 💪🏻</h2>
@@ -185,9 +185,6 @@
    <Hobbies class="container"></Hobbies>
    </div>
    
-   <footer>
-     Footer
-   </footer>
    
   </div>
 </template>
@@ -221,7 +218,8 @@ export default {
       erasingSpeed: 100,
       newTextDelay: 1500,
       typeArrayIndex: 0,
-      charIndex: 0
+      charIndex: 0,
+      publicPath: process.env.BASE_URL
 
     }
   },
