@@ -289,7 +289,6 @@ export default {
     top: 50%;
     left: 50%;
     margin: 0 auto;
-    background: red;
 
 }
 .home{
@@ -369,11 +368,8 @@ img{
 #aboutMe{
   position: relative;
   @media screen and (max-width: 1400px) {
-   padding-top: 1rem;
+   padding-top: 4rem;
   }
-  @media screen and (max-width: 950px) {
-       padding-top: 3.5rem;
-     }
 }
 .id-pic{
   width: 8rem;
@@ -384,18 +380,11 @@ img{
   left: -120px;
   top: 50px;
   @media screen and (max-width: 1400px) {
-   left: 350px;
+   left: 40%;
+   margin: 0 auto;
   top: 0px;
 
   }
-  @media screen and (max-width: 1200px) {
-       left: 250px;
-       top: 0px;
-     }
-     @media screen and (max-width: 950px) {
-       left: 130px;
-       top: 0px;
-     }
 }
 .aboutMePar{
   font-size: 120%;
@@ -441,7 +430,7 @@ img{
   border-radius: 20px;
   box-shadow: 3px 3px 7px rgba(63, 62, 62, 0.596);
   transition: 400ms;
-  @media screen and (max-width: 570px) {
+  @media screen and (max-width: 600px) {
         width: 100%;
   }
 
@@ -471,8 +460,8 @@ img{
     width: 50px;
   }
   .ux{
-    width: 90px;
-    position: absolute;
+    width: 80px;
+    
   }
   .analytics{
     width: 7rem;

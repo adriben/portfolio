@@ -1,6 +1,6 @@
 <template>
 <div v-if="isLoading" class="loader">
-  <CubeShadow class="spin"></CubeShadow>
+  <Circle8 class="spin"></Circle8>
     </div>
     
      <router-view/>
@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import {CubeShadow} from 'vue-loading-spinner';
+import {Circle8} from 'vue-loading-spinner';
 
 
 export default {
@@ -21,7 +21,7 @@ export default {
     }
  },
  components: {
- "CubeShadow": CubeShadow
+ "Circle8": Circle8
  },
  mounted () {
          

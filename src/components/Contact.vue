@@ -62,9 +62,6 @@ export default {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     @media screen and (max-width: 970px) {
-        grid-template-columns: 1fr 1fr;
-  }
-  @media screen and (max-width: 500px) {
         grid-template-columns: 1fr;
   }
     
