@@ -188,7 +188,7 @@
    </div>
    <div class="text-center mt-4">
     <h3>Hobbies 🏖</h3>
-   <Hobbies class="container"></Hobbies>
+   <Hobbies class="container mb-5"></Hobbies>
    </div>
    
    
