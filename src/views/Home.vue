@@ -1,10 +1,13 @@
 <template>
+
   <div class="home">
+    
+     
     
      <TheHeader class="mb-4"></TheHeader>
      
      <section class="banniere col-12 hero">
-       <!-- <Spinner></Spinner> -->
+       
         <div class="hero-text">
           <p>Hi, my name is Adrien</p>
           <br>
@@ -198,7 +201,7 @@
 import TheHeader from '@/components/TheHeader.vue';
 import Hobbies from '@/components/Hobbies.vue';
 import Contact from '@/components/Contact.vue';
-// import Spinner from '@/components/Spinner.vue';
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -212,7 +215,7 @@ export default {
     "TheHeader": TheHeader,
     "Hobbies": Hobbies,
     "Contact": Contact,
-    // "Spinner": Spinner
+    
   },
   data:() =>{
     return{
@@ -224,7 +227,8 @@ export default {
       newTextDelay: 1500,
       typeArrayIndex: 0,
       charIndex: 0,
-      publicPath: process.env.BASE_URL
+      publicPath: process.env.BASE_URL,
+      isLoading: true
 
     }
   },
@@ -235,6 +239,7 @@ export default {
            this.typeStatus = true;
            this.typeValue += this.typeArray[this.typeArrayIndex].charAt(this.charIndex)
            this.charIndex += 1;
+           this.isLoading = false
 
            setTimeout(this.typeText, this.typingSpeed);
      } else{
@@ -264,10 +269,30 @@ export default {
   created(){
     setTimeout(this.typeText, this.newTextDelay + 200);
     AOS.init()
-  }
+    
+  },
+  
 }
 </script>
 <style lang="scss">
+
+.loader{
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(11, 12, 12, 0.541);
+    position: fixed;
+    
+}
+
+.spin{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0 auto;
+    background: red;
+
+}
 .home{
   background-color: rgba(255, 255, 255, 0.685);
   h2{

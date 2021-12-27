@@ -1,12 +1,17 @@
 <template>
- <Spinner v-if="isLoading"></Spinner>
-    <router-view/>
+<div v-if="isLoading" class="loader">
+  <CubeShadow class="spin"></CubeShadow>
+    </div>
+    <div v-else>
+     <router-view/>
+    </div>
+   
      
   
 </template>
 
 <script>
-import Spinner from '@/components/Spinner.vue';
+import {CubeShadow} from 'vue-loading-spinner';
 
 
 export default {
@@ -17,13 +22,13 @@ export default {
     }
  },
  components: {
-   "Spinner": Spinner
+ "CubeShadow": CubeShadow
  },
-  mounted () {
-      this.$nextTick(() => {
-        this.isLoading = false
-      })
+ mounted () {
+         this.isLoading = false
+      
     }
+  
 }
 </script>
 
