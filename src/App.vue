@@ -1,5 +1,7 @@
 <template>
-
+<!-- <div v-if="isLoading" class="loader">
+  <Circle8 class="spin"></Circle8>
+    </div> -->
     
      <router-view/>
    
