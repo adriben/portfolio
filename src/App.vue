@@ -2,9 +2,8 @@
 <div v-if="isLoading" class="loader">
   <CubeShadow class="spin"></CubeShadow>
     </div>
-    <div v-else>
+    
      <router-view/>
-    </div>
    
      
   
@@ -25,9 +24,14 @@ export default {
  "CubeShadow": CubeShadow
  },
  mounted () {
-         this.isLoading = false
+         
+         window.addEventListener("load", async () => {    
+       this.isLoading = false
+})
       
     }
+
+    
   
 }
 </script>

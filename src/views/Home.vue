@@ -228,7 +228,6 @@ export default {
       typeArrayIndex: 0,
       charIndex: 0,
       publicPath: process.env.BASE_URL,
-      isLoading: true
 
     }
   },
