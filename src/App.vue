@@ -1,14 +1,29 @@
 <template>
-  
+ <Spinner v-if="isLoading"></Spinner>
     <router-view/>
+     
   
 </template>
 
 <script>
+import Spinner from '@/components/Spinner.vue';
 
 
 export default {
- name: 'app'
+ name: 'app',
+ data(){
+    return {
+      isLoading: true
+    }
+ },
+ components: {
+   "Spinner": Spinner
+ },
+  mounted () {
+      this.$nextTick(() => {
+        this.isLoading = false
+      })
+    }
 }
 </script>
 

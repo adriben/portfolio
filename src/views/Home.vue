@@ -1,7 +1,10 @@
 <template>
   <div class="home">
+    
      <TheHeader class="mb-4"></TheHeader>
+     
      <section class="banniere col-12 hero">
+       <!-- <Spinner></Spinner> -->
         <div class="hero-text">
           <p>Hi, my name is Adrien</p>
           <br>
@@ -27,16 +30,16 @@
        
        <h2 class="text-center pb-3">My Skills 💪🏻</h2>
        <div class="text-center">
-       <img src="../assets/html.png" alt="logo html" class="logo htmlD" data-aos="zoom-in-up" data-aos-duration="2400">
-       <img src="../assets/css.png" alt="logo css" class="logo css cssD" data-aos="zoom-in-up" data-aos-duration="2000">
-       <img src="../assets/js.png" alt="logo javascript" class="logo js jsD" data-aos="zoom-in-up" data-aos-duration="1800">
-       <img src="../assets/logo.png" alt="logo vue" class="logo vue vueD" data-aos="zoom-in-up" data-aos-duration="1600">
-       <img src="../assets/sass.png" alt="logo sass" class="logo sassD" data-aos="zoom-in-up" data-aos-duration="1400">
-       <img src="../assets/bootstrap.png" alt="logo bootstrap" class="logo bootstrapD" data-aos="zoom-in-up" data-aos-duration="1200">
-       <img src="../assets/mysql.png" alt="logo mysql" class="logo mysql mysqlD" data-aos="zoom-in-up" data-aos-duration="1000">
-       <img src="../assets/mongo.png" alt="logo mongodb" class="logo mongo mongoD" data-aos="zoom-in-up" data-aos-duration="800">
-       <img src="../assets/node.png" alt="logo node" class="logo node nodeD" data-aos="zoom-in-up" data-aos-duration="600">
-       <img src="../assets/lr.png" alt="logo lr" class="logo lr lrD" data-aos="zoom-in-up" data-aos-duration="400">
+       <img src="../assets/html.png" alt="logo html" class="logo htmlD mt-4" data-aos="zoom-in-up" data-aos-duration="2400">
+       <img src="../assets/css.png" alt="logo css" class="logo css cssD mt-4" data-aos="zoom-in-up" data-aos-duration="2000">
+       <img src="../assets/js.png" alt="logo javascript" class="logo js jsD mt-4" data-aos="zoom-in-up" data-aos-duration="1800">
+       <img src="../assets/logo.png" alt="logo vue" class="logo vue vueD mt-4" data-aos="zoom-in-up" data-aos-duration="1600">
+       <img src="../assets/sass.png" alt="logo sass" class="logo sassD mt-4" data-aos="zoom-in-up" data-aos-duration="1400">
+       <img src="../assets/bootstrap.png" alt="logo bootstrap" class="logo bootstrapD mt-4" data-aos="zoom-in-up" data-aos-duration="1200">
+       <img src="../assets/mysql.png" alt="logo mysql" class="logo mysql mysqlD mt-4" data-aos="zoom-in-up" data-aos-duration="1000">
+       <img src="../assets/mongo.png" alt="logo mongodb" class="logo mongo mongoD mt-4" data-aos="zoom-in-up" data-aos-duration="800">
+       <img src="../assets/node.png" alt="logo node" class="logo node nodeD mt-4" data-aos="zoom-in-up" data-aos-duration="600">
+       <img src="../assets/lr.png" alt="logo lr" class="logo lr lrD mt-4" data-aos="zoom-in-up" data-aos-duration="400">
        </div>
       
 
@@ -194,7 +197,8 @@
 
 import TheHeader from '@/components/TheHeader.vue';
 import Hobbies from '@/components/Hobbies.vue';
-import Contact from '@/components/Contact.vue'
+import Contact from '@/components/Contact.vue';
+// import Spinner from '@/components/Spinner.vue';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -207,7 +211,8 @@ export default {
   components: {
     "TheHeader": TheHeader,
     "Hobbies": Hobbies,
-    "Contact": Contact
+    "Contact": Contact,
+    // "Spinner": Spinner
   },
   data:() =>{
     return{
@@ -298,7 +303,7 @@ img{
         left:200px;
   }
      @media screen and (max-width: 560px) {
-        left:-1px;
+        left:1px;
   }
     p{
       position: absolute;
@@ -419,6 +424,9 @@ img{
   &:hover{
     transform: scale(1.05);
     transition: 400ms;
+    @media screen and (max-width: 600px) {
+       transform: scale(1);
+  }
   }
 
   
