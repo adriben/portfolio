@@ -238,7 +238,6 @@ export default {
            this.typeStatus = true;
            this.typeValue += this.typeArray[this.typeArrayIndex].charAt(this.charIndex)
            this.charIndex += 1;
-           this.isLoading = false
 
            setTimeout(this.typeText, this.typingSpeed);
      } else{
