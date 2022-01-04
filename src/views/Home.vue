@@ -9,11 +9,19 @@
      <section class="banniere col-12 hero">
        
         <div class="hero-text">
-          <p>Hi, my name is Adrien</p>
+
+          <p v-if="eng">Hi, my name is Adrien</p>
+          <p v-else>Adrienと申します。</p>
           <br>
     
-          <h1 class="pt-4 text-center">
+          <h1 class="pt-4 text-center" v-if="eng">
           I am a Web developer
+            <br>
+            <span class="typed-text">{{ typeValue }}</span>
+            <span class="cursor"  :class="{'typing': typeStatus }">&nbsp;</span>
+           </h1>
+           <h1 class="pt-4 text-center" v-else>
+          Webデベロッパー
             <br>
             <span class="typed-text">{{ typeValue }}</span>
             <span class="cursor"  :class="{'typing': typeStatus }">&nbsp;</span>
@@ -22,16 +30,22 @@
       </section>
      
    <div class="container" id="aboutMe">
-     <h2  class="mt-5 pt-3 text-center">About me ✍🏻</h2>
+     <h2  class="mt-5 pt-3 text-center" v-if="eng">About me ✍🏻</h2>
+     <h2  class="mt-5 pt-3 text-center" v-else>私について ✍🏻</h2>
       <img  src="../assets/profilePic.jpg" alt="id picture" class="id-pic" data-aos="zoom-in" data-aos-duration="1800">
-     <p class="aboutMePar">Inspired by the creative aspect of Web Developing, I recently graduated from an online program with Openclassrooms. 
+     <p class="aboutMePar" v-if="eng">Inspired by the creative aspect of Web Developing, I recently graduated from an online program with Openclassrooms. 
        I am mainly focused on frontend but I also acquired some skills in backend developement with Node Js (Express). 
        I am really motivated and eager to learn, and most of all I enjoy coding.  I used to live in France, China (3 years) and Australia (2 years), I am now based in Fukuoka Japan since 2019, although I recently passed the JLPT N2, I am still learning japanese every day. I can also speak english, french and chinese.</p>
+       <p v-else>Web開発の創造的な側面に魅力を感じキャリアチェンジを決意しました。オンラインでITを学ぶ事ができるフランス政府認定の教育プログラムである、Openclassroomsを受講し2021年12月に無事卒業する事ができました(準学士号レベル)。 
+         私の強みは学習意欲の高さで主にフロントエンドに焦点を当てていますが、Node Js（Express）を使用してバックエンド開発のスキルも習得しています。 
+         そして何よりもコーディングを楽しんでいます。 以前はフランス、中国（3年）、オーストラリア（2年）に住んでいた経験があり、英語、フランス語、中国語が話せます。2019年から福岡に拠点を移しており、2021年2月にJLPT N2に合格しました。現在JLPT N1 取得に向けて勉強を続けています。 </p>
        <div class="text-center mb-5 pb-3">
-        <a :href="`${publicPath}Benete2022.pdf`" class="btn btn-secondary text-center" download="Benete2022.pdf"><i class="fas fa-download"></i> Download my resume in PDF</a>
+        <a :href="`${publicPath}Benete2022.pdf`" class="btn btn-secondary text-center" download="Benete2022.pdf" v-if="eng"><i class="fas fa-download"></i> Download my resume in PDF</a>
+        <a :href="`${publicPath}Benete2022.pdf`" class="btn btn-secondary text-center" download="Benete2022.pdf" v-else><i class="fas fa-download"></i> PDF履歴書をダウンロード</a>
        </div>
        
-       <h2 class="text-center pb-3">My Skills 💪🏻</h2>
+       <h2 class="text-center pb-3" v-if="eng">My Skills 💪🏻</h2>
+       <h2 class="text-center pb-3" v-else>スキル 💪🏻</h2>
        <div class="text-center">
        <img src="../assets/html.png" alt="logo html" class="logo htmlD mt-4" data-aos="zoom-in-up" data-aos-duration="2400">
        <img src="../assets/css.png" alt="logo css" class="logo css cssD mt-4" data-aos="zoom-in-up" data-aos-duration="2000">
@@ -49,7 +63,8 @@
        
    </div>
    <br>
-   <h2 class="text-center pt-4 mb-5 mt-3" id="myWorks">My works <span>🚀</span></h2>
+   <h2 class="text-center pt-4 mb-5 mt-3" id="myWorks" v-if="eng">My works <span>🚀</span></h2>
+   <h2 class="text-center pt-4 mb-5 mt-3" id="myWorks" v-else>プロジェクト <span>🚀</span></h2>
    <br>
    <div class="works">
 
@@ -58,16 +73,23 @@
   <img class="card-img-top reservia" src="..\assets\reservia.png" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">Reservia</h5>
-    <p class="card-text">Turn Mock-ups Into a Web Page with HTML & CSS,  implementing a travel booking platform's website from scratch. The page is responsive</p>
+    <p class="card-text" v-if="eng">Turn Mock-ups Into a Web Page with HTML & CSS,  implementing a travel booking platform's website from scratch. The page is responsive</p>
+    <p class="card-text" v-else>モックアップをHTMLとCSSを使用してWebページに変換し、旅行予約プラットフォームのWebサイトを最初から実装します。ページはレスポンシブです</p>
     <div class="pb-3">
        
     <img src="../assets/html.png" alt="logo html" class="logo" data-aos="fade-right">
     <img src="../assets/css.png" alt="logo css" class="logo css" data-aos="fade-right">
 
     </div>
-   
-    <a href="https://adriben.github.io/AdrienBenete_2_27072021/" class="btn btn-primary">Check the webpage</a>
+    <div v-if="eng">
+      <a href="https://adriben.github.io/AdrienBenete_2_27072021/" class="btn btn-primary">Check the webpage</a>
     <a href="https://github.com/adriben/AdrienBenete_2_27072021" class="btn btn-secondary ml-3">Check the code</a>
+    </div>
+    <div v-else>
+      <a href="https://adriben.github.io/AdrienBenete_2_27072021/" class="btn btn-primary">Webページに移動します</a>
+    <a href="https://github.com/adriben/AdrienBenete_2_27072021" class="btn btn-secondary ml-3">コードに移動します</a>
+    </div>
+  
     <img class="iphone" src="../assets/iphone.png" alt="iphone picture" id="reservia">
     
   </div>
@@ -76,7 +98,8 @@
   <img class="card-img-top ohmyfood" src="..\assets\ohmyfood.png" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">Ohmyfood</h5>
-    <p class="card-text">Integrate a mobile website with animations in CSS. Implement the mobile version of this foodtech website with CSS animations.</p>
+    <p class="card-text" v-if="eng">Integrate a mobile website with animations in CSS. Implement the mobile version of this foodtech website with CSS animations.</p>
+    <p class="card-text" v-else>モックアップをHTMLとCSSを使用してWebページに変換し、旅行予約プラットフォームのWebサイトを最初から実装します。ページはレスポンシブです</p>
     <div class="pb-3">
        
     <img src="../assets/html.png" alt="logo html" class="logo" data-aos="fade-right">
@@ -94,8 +117,10 @@
 <div class="card mb-5">
   <img class="card-img-top" src="..\assets\lachouetteagence.png" alt="Card image cap">
   <div class="card-body">
-    <h5 class="card-title">Optimize an Existing Website (La Chouette agence)</h5>
-    <p class="card-text">Research and implement current best practices and standards in web development, including SEO, size and speed, and accessibility.</p>
+    <h5 class="card-title" v-if="eng">Optimize an Existing Website (La Chouette agence)</h5>
+    <h5 class="card-title" v-else>既存のWebサイトを最適化します (La Chouette agence)</h5>
+    <p class="card-text" v-if="eng">Research and implement current best practices and standards in web development, including SEO, size and speed, and accessibility.</p>
+    <p class="card-text" v-else>SEO、サイズと速度、アクセシビリティなど、Web開発における現在のベストプラクティスと標準を調査して実装します</p>
     <div class="pb-3">
        
     <img src="../assets/seo.png" alt="logo seo" class="logo" data-aos="fade-right">
@@ -113,8 +138,10 @@
 <div class="card mb-5">
   <img class="card-img-top" src="..\assets\orinocamera.png" alt="Card image cap">
   <div class="card-body">
-    <h5 class="card-title">Build an e-commerce Website with JavaScript</h5>
-    <p class="card-text">Created the desing and use an API to collect information about products and add a cart feature for purchases. Utilisation of fetch, localstorage, I did all the front end part. It allowed me to learn and improve myself in vanilla javascript (no framework)</p>
+    <h5 class="card-title" v-if="eng">Build an e-commerce Website with JavaScript</h5>
+     <h5 class="card-title" v-else>JavaScriptを使用してeコマースWebサイトを構築する</h5>
+    <p class="card-text" v-if="eng">Created the desing and use an API to collect information about products and add a cart feature for purchases. Utilisation of fetch, localstorage, I did all the front end part. It allowed me to learn and improve myself in vanilla javascript (no framework)</p>
+    <p class="card-text" v-else>設計を作成し、APIを使用して製品に関する情報を収集し、購入用のカート機能を追加します。 フェッチ、ローカルストレージを利用して、すべてのフロントエンド部分を実行しました。 それは私がバニラジャバスクリプト（フレームワークなし）で自分自身を学びそして改善することを可能にしました</p>
     <div class="pb-3">
        
     <img src="../assets/html.png" alt="logo html" class="logo" data-aos="fade-right">
@@ -136,7 +163,8 @@
   <img class="card-img-top" src="..\assets\hotsauce.png" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">Build a Secure API for a Review App</h5>
-    <p class="card-text">Build the back end for a new app, Hot Takes, where customers review specialty hot sauces. Use Node.js, Express, and MongoDB to build its NoSQL database. Secure customer data by applying the OWASP web security standards.</p>
+    <p class="card-text" v-if="eng">Build the back end for a new app, Hot Takes, where customers review specialty hot sauces. Use Node.js, Express, and MongoDB to build its NoSQL database. Secure customer data by applying the OWASP web security standards.</p>
+     <p class="card-text" v-else>新しいアプリ、Hot Takesのバックエンドを構築します。ここでは、顧客が特製ホットソースをレビューします。 Node.js、Express、およびMongoDBを使用して、NoSQLデータベースを構築します。 OWASPWebセキュリティ標準を適用して顧客データを保護します</p>
     <div class="pb-3">
        
     <img src="../assets/node.png" alt="logo node" class="logo node" data-aos="fade-right">
@@ -157,7 +185,8 @@
   <img class="card-img-top" src="..\assets\groupomania.png" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title">Build a Full-Stack Corporate Social Network </h5>
-    <p class="card-text">Analyze a client’s needs to define the scope and features of a new application. With the help of a front-end framework (Vue.js), build a full-stack solution, including a SQL database. The user is able to share a post, like and comment.</p>
+    <p class="card-text" v-if="eng">Analyze a client’s needs to define the scope and features of a new application. With the help of a front-end framework (Vue.js), build a full-stack solution, including a SQL database. The user is able to share a post, like and comment.</p>
+     <p class="card-text" v-else>クライアントのニーズを分析して、新しいアプリケーションの範囲と機能を定義します。 フロントエンドフレームワーク（Vue.js）を使用して、SQLデータベースを含むフルスタックソリューションを構築します。 ユーザーは、投稿、いいね、コメントを共有できます。</p>
     <div class="pb-3">
        
     <img src="../assets/logo.png" alt="logo vue" class="logo" data-aos="fade-right">
@@ -182,12 +211,14 @@
 
    </div>
    <div class="text-center" id="contact">
-     <h2>Contact ☎️</h2>
+     <h2 v-if="eng">Contact ☎️</h2>
+     <h2 v-else>連絡先 ☎️</h2>
      <Contact></Contact>
 
    </div>
    <div class="text-center mt-4">
-    <h3>Hobbies 🏖</h3>
+    <h3 v-if="eng">Hobbies 🏖</h3>
+    <h3 v-else>趣味  🏖</h3>
    <Hobbies class="container mb-5"></Hobbies>
    </div>
    
@@ -228,6 +259,7 @@ export default {
       typeArrayIndex: 0,
       charIndex: 0,
       publicPath: process.env.BASE_URL,
+      eng: true
 
     }
   },
@@ -262,8 +294,14 @@ export default {
 
         setTimeout(this.typeText, this.typingSpeed + 1000);
       }
-    }
+    },
+    changeLang(){
+
+    console.log('hello');
+    this.eng = !this.eng
+  }
   },
+  
   created(){
     setTimeout(this.typeText, this.newTextDelay + 200);
     AOS.init()
