@@ -74,7 +74,7 @@
   <div class="card-body">
     <h5 class="card-title">Reservia</h5>
     <p class="card-text" v-if="eng">Turn Mock-ups Into a Web Page with HTML & CSS,  implementing a travel booking platform's website from scratch. The page is responsive</p>
-    <p class="card-text" v-else>モックアップをHTMLとCSSを使用してWebページに変換し、旅行予約プラットフォームのWebサイトを最初から実装します。ページはレスポンシブです</p>
+    <p class="card-text" v-else>モックアップをHTMLとCSSを使用してWebページに変換し、旅行予約プラットフォームのWebサイトを最初から実装します。ページはレスポンシブルです</p>
     <div class="pb-3">
        
     <img src="../assets/html.png" alt="logo html" class="logo" data-aos="fade-right">
@@ -86,8 +86,8 @@
     <a href="https://github.com/adriben/AdrienBenete_2_27072021" class="btn btn-secondary ml-3">Check the code</a>
     </div>
     <div v-else>
-      <a href="https://adriben.github.io/AdrienBenete_2_27072021/" class="btn btn-primary">Webページに移動します</a>
-    <a href="https://github.com/adriben/AdrienBenete_2_27072021" class="btn btn-secondary ml-3">コードに移動します</a>
+      <a href="https://adriben.github.io/AdrienBenete_2_27072021/" class="btn btn-primary">Webページに移動する</a>
+    <a href="https://github.com/adriben/AdrienBenete_2_27072021" class="btn btn-secondary ml-3">コードに移動する</a>
     </div>
   
     <img class="iphone" src="../assets/iphone.png" alt="iphone picture" id="reservia">
@@ -99,7 +99,7 @@
   <div class="card-body">
     <h5 class="card-title">Ohmyfood</h5>
     <p class="card-text" v-if="eng">Integrate a mobile website with animations in CSS. Implement the mobile version of this foodtech website with CSS animations.</p>
-    <p class="card-text" v-else>モックアップをHTMLとCSSを使用してWebページに変換し、旅行予約プラットフォームのWebサイトを最初から実装します。ページはレスポンシブです</p>
+    <p class="card-text" v-else>モバイルWebサイトをCSSのアニメーションと統合します。 このフードテックウェブサイトのモバイル版をCSSアニメーションで実装する</p>
     <div class="pb-3">
        
     <img src="../assets/html.png" alt="logo html" class="logo" data-aos="fade-right">
@@ -107,8 +107,14 @@
     <img src="../assets/sass.png" alt="logo sass" class="logo" data-aos="fade-right">
 
     </div>
-    <a href="https://adriben.github.io/AdrienBenete_3_15082021/" class="btn btn-primary">Check the webpage</a>
-    <a href="https://github.com/adriben/AdrienBenete_3_15082021"  class="btn btn-secondary ml-3">Check the code</a>
+    <div v-if="eng">
+      <a href="https://adriben.github.io/AdrienBenete_3_15082021/" class="btn btn-primary">Check the webpage</a>
+    <a href="https://github.com/adriben/AdrienBenete_3_15082021" class="btn btn-secondary ml-3">Check the code</a>
+    </div>
+    <div v-else>
+      <a href="https://adriben.github.io/AdrienBenete_3_15082021/" class="btn btn-primary">Webページに移動する</a>
+    <a href="https://github.com/adriben/AdrienBenete_3_15082021" class="btn btn-secondary ml-3">コードに移動する</a>
+    </div>
     <img class="iphone" src="../assets/iphone.png" alt="iphone picture" id="ohmyfood">
     
     
@@ -127,8 +133,15 @@
     <img src="../assets/analytics.png" alt="logo analytics" class="logo analytics" data-aos="fade-right">
 
     </div>
+    <div v-if="eng">
     <a href="https://github.com/adriben/AdrienBenete_4_27082021" class="btn btn-primary">Code after optimization</a>
     <a href="https://github.com/adriben/chouetteAgenceBEFORE" class="btn btn-secondary ml-3">Code before optimization</a>
+    </div>
+    <div v-else>
+      <a href="https://github.com/adriben/AdrienBenete_4_27082021" class="btn btn-primary">最適化後</a>
+    <a href="https://github.com/adriben/chouetteAgenceBEFORE" class="btn btn-secondary ml-3">最適化前</a>
+    </div>
+    
     <img class="performance" src="../assets/performance.png" alt="iphone picture" id="performance">
     
     
@@ -140,8 +153,8 @@
   <div class="card-body">
     <h5 class="card-title" v-if="eng">Build an e-commerce Website with JavaScript</h5>
      <h5 class="card-title" v-else>JavaScriptを使用してeコマースWebサイトを構築する</h5>
-    <p class="card-text" v-if="eng">Created the desing and use an API to collect information about products and add a cart feature for purchases. Utilisation of fetch, localstorage, I did all the front end part. It allowed me to learn and improve myself in vanilla javascript (no framework)</p>
-    <p class="card-text" v-else>設計を作成し、APIを使用して製品に関する情報を収集し、購入用のカート機能を追加します。 フェッチ、ローカルストレージを利用して、すべてのフロントエンド部分を実行しました。 それは私がバニラジャバスクリプト（フレームワークなし）で自分自身を学びそして改善することを可能にしました</p>
+    <p class="card-text" v-if="eng">Created the design and use an API to collect information about products and add a cart feature for purchases. Utilisation of fetch, localstorage, I did all the front end part. It allowed me to learn and improve myself in vanilla javascript (no framework)</p>
+    <p class="card-text" v-else>デザインを作成し、APIを使用して製品に関する情報を収集、購入用のカート機能を追加します。 フェッチ、ローカルストレージを利用して、すべてのフロントエンド部分を実行しました。バニラジャバスクリプト（フレームワークなし)を使い自分自身で確認改善することができます</p>
     <div class="pb-3">
        
     <img src="../assets/html.png" alt="logo html" class="logo" data-aos="fade-right">
@@ -152,8 +165,15 @@
        <img src="../assets/ux.png" alt="logo design" class="logo ux" data-aos="fade-right">
 
     </div>
-    <a href="https://youtu.be/VQOkRmA3UsE" class="btn btn-primary mr-3">Check the video Demo</a>
+    <div v-if="eng">
+     <a href="https://youtu.be/VQOkRmA3UsE" class="btn btn-primary mr-3">Check the video Demo</a>
     <a href="https://github.com/adriben/AdrienBenete_5_27092021/tree/main/frontend" class="btn btn-secondary">Check the code</a>
+    </div>
+    <div v-else>
+      <a href="https://youtu.be/VQOkRmA3UsE" class="btn btn-primary">Youtubeビデオに移動する</a>
+    <a href="https://github.com/adriben/AdrienBenete_5_27092021/tree/main/frontend" class="btn btn-secondary ml-3">コードに移動する</a>
+    </div>
+   
     
     
   </div>
