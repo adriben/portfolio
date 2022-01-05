@@ -182,9 +182,10 @@
 <div class="card mb-5">
   <img class="card-img-top" src="..\assets\hotsauce.png" alt="Card image cap">
   <div class="card-body">
-    <h5 class="card-title">Build a Secure API for a Review App</h5>
+    <h5 class="card-title" v-if="eng">Build a Secure API for a Review App</h5>
+    <h5 class="card-title" v-else>レビューアプリのAPIを構築する</h5>
     <p class="card-text" v-if="eng">Build the back end for a new app, Hot Takes, where customers review specialty hot sauces. Use Node.js, Express, and MongoDB to build its NoSQL database. Secure customer data by applying the OWASP web security standards.</p>
-     <p class="card-text" v-else>新しいアプリ、Hot Takesのバックエンドを構築します。ここでは、顧客が特製ホットソースをレビューします。 Node.js、Express、およびMongoDBを使用して、NoSQLデータベースを構築します。 OWASPWebセキュリティ標準を適用して顧客データを保護します</p>
+     <p class="card-text" v-else>新しいアプリ、Hot Takesのバックエンドを構築。ここでは、顧客が特製ホットソースをレビューします。 Node.js、Express、およびMongoDBを使用して、NoSQLデータベースを構築します。 またOWASP Webセキュリティ標準を適用して顧客データを保護します。</p>
     <div class="pb-3">
        
     <img src="../assets/node.png" alt="logo node" class="logo node" data-aos="fade-right">
@@ -192,8 +193,15 @@
     
 
     </div>
-    <a href="https://youtu.be/wP7ak2om1L8" class="btn btn-primary">Check the video Demo</a>
+    <div v-if="eng">
+     <a href="https://youtu.be/wP7ak2om1L8" class="btn btn-primary">Check the video Demo</a>
     <a href="https://github.com/adriben/AdrienBenete_6_26102021/tree/main/backend" class="btn btn-secondary ml-3">Check the code</a>
+    </div>
+    <div v-else>
+      <a href="https://youtu.be/wP7ak2om1L8" class="btn btn-primary">Youtubeビデオに移動する</a>
+    <a href="https://github.com/adriben/AdrienBenete_6_26102021/tree/main/backend" class="btn btn-secondary ml-3">コードに移動する</a>
+    </div>
+    
 
     
     
@@ -204,7 +212,8 @@
 <div class="card mb-5">
   <img class="card-img-top" src="..\assets\groupomania.png" alt="Card image cap">
   <div class="card-body">
-    <h5 class="card-title">Build a Full-Stack Corporate Social Network </h5>
+    <h5 class="card-title" v-if="eng">Build a Full-Stack Corporate Social Network </h5>
+    <h5 class="card-title" v-else>フルスタックのソーシャルネットワークを構築する</h5>
     <p class="card-text" v-if="eng">Analyze a client’s needs to define the scope and features of a new application. With the help of a front-end framework (Vue.js), build a full-stack solution, including a SQL database. The user is able to share a post, like and comment.</p>
      <p class="card-text" v-else>クライアントのニーズを分析して、新しいアプリケーションの範囲と機能を定義します。 フロントエンドフレームワーク（Vue.js）を使用して、SQLデータベースを含むフルスタックソリューションを構築します。 ユーザーは、投稿、いいね、コメントを共有できます。</p>
     <div class="pb-3">
@@ -218,8 +227,15 @@
     
 
     </div>
-    <a href="https://youtu.be/reHb5I7fNpc" class="btn btn-primary">Check the video Demo</a>
+    <div v-if="eng">
+     <a href="https://youtu.be/reHb5I7fNpc" class="btn btn-primary">Check the video Demo</a>
     <a href="https://github.com/adriben/AdrienBenete_7_19112021-" class="btn btn-secondary ml-3">Check the code</a>
+    </div>
+    <div v-else>
+      <a href="https://youtu.be/reHb5I7fNpc" class="btn btn-primary">Youtubeビデオに移動する</a>
+    <a href="https://github.com/adriben/AdrienBenete_7_19112021-" class="btn btn-secondary ml-3">コードに移動する</a>
+    </div>
+    
 
     
     
