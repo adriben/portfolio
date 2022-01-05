@@ -41,7 +41,7 @@
          そして何よりもコーディングを楽しんでいます。 以前はフランス、中国（3年）、オーストラリア（2年）に住んでいた経験があり、英語、フランス語、中国語が話せます。2019年から福岡に拠点を移しており、2021年2月にJLPT N2に合格しました。現在JLPT N1 取得に向けて勉強を続けています。 </p>
        <div class="text-center mb-5 pb-3">
         <a :href="`${publicPath}Benete2022.pdf`" class="btn btn-secondary text-center" download="Benete2022.pdf" v-if="eng"><i class="fas fa-download"></i> Download my resume in PDF</a>
-        <a :href="`${publicPath}Benete2022.pdf`" class="btn btn-secondary text-center" download="Benete2022.pdf" v-else><i class="fas fa-download"></i> PDF履歴書をダウンロード</a>
+        <a :href="`${publicPath}履歴書2022.pdf`" class="btn btn-secondary text-center" download="Benete2022.pdf" v-else><i class="fas fa-download"></i> PDF履歴書をダウンロード</a>
        </div>
        
        <h2 class="text-center pb-3" v-if="eng">My Skills 💪🏻</h2>
