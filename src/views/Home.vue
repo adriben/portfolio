@@ -806,6 +806,9 @@ img {
   transition: 400ms;
   @media screen and (max-width: 600px) {
     width: 100%;
+    a.btn-secondary{
+      margin-top: 0.8rem;
+    }
   }
 
   &:hover {
