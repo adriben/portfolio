@@ -550,7 +550,7 @@
             />
           </div>
           <div v-if="eng">
-            <a href="https://youtu.be/reHb5I7fNpc" class="btn btn-primary"
+            <a href="https://youtu.be/2UmIfHTFXOA" class="btn btn-primary"
               >Check the video Demo</a
             >
             <a
@@ -560,7 +560,7 @@
             >
           </div>
           <div v-else>
-            <a href="https://youtu.be/reHb5I7fNpc" class="btn btn-primary"
+            <a href="https://youtu.be/2UmIfHTFXOA" class="btn btn-primary"
               >Youtubeビデオに移動する</a
             >
             <a
