@@ -11,7 +11,7 @@
 
     <div class="hobbies-el">
       <i class="fas fa-camera-retro" data-aos="zoom-in"></i>
-      <p>Photographie</p>
+      <p>Photography</p>
     </div>
 
     <div class="hobbies-el">
