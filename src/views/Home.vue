@@ -571,6 +571,124 @@
           </div>
         </div>
       </div>
+
+      <div class="card mb-5">
+        <img
+          class="card-img-top"
+          src="..\assets\cyclingFukuoka.png"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title" v-if="eng">
+            Build an interactive site about cycling
+          </h5>
+          <h5 class="card-title" v-else>サイクリングに関するウェブページ</h5>
+          <p class="card-text" v-if="eng">
+            Creation of a interactive website for people passionated about cycling in Japan and Fukuoka. Api call to gather and get the weather and use of a database to store the maps.(In developement)
+          </p>
+          <p class="card-text" v-else>
+        福岡のサイクリングに人々のためのインタラクティブなウェブサイトの作成。 天気を収集して取得し、データベースを使用して地図を保存するためのApi呼び出し（開発中）
+          </p>
+          <div class="pb-3">
+            <img
+              src="../assets/logo.png"
+              alt="logo vue"
+              class="logo"
+              data-aos="fade-right"
+            />
+            <img
+              src="../assets/node.png"
+              alt="logo node"
+              class="logo node"
+              data-aos="fade-right"
+            />
+            <img
+              src="../assets/mongo.png"
+              alt="logo mongo"
+              class="logo mongo"
+              data-aos="fade-right"
+            />
+            <img
+              src="../assets/ux.png"
+              alt="logo design designGroupo"
+              class="logo ux"
+              data-aos="fade-right"
+            />
+          </div>
+          <div v-if="eng">
+            
+            <a
+              href="https://github.com/adriben/cycling-fukuoka"
+              class="btn btn-secondary ml-3"
+              >Check the code</a
+            >
+          </div>
+          <div v-else>
+            
+            <a
+              href="https://github.com/adriben/cycling-fukuoka"
+              class="btn btn-secondary ml-3"
+              >コードに移動する</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-5">
+        <img
+          class="card-img-top"
+          src="..\assets\movieApp.png"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title" v-if="eng">
+            Build a Movie search engine
+          </h5>
+          <h5 class="card-title" v-else>映画検索エンジンを構築する</h5>
+          <p class="card-text" v-if="eng">
+            Build the frontend of a Movie search engine like IMDB with Nuxt.js. Api call with axios to gather and display the datas, possibility to search and get details about a movie. (In developement)
+          </p>
+          <p class="card-text" v-else>
+           Nuxt.jsを使用してIMDBのような映画検索エンジンのフロントエンドをします。 Apiは、axiosを使用してデータを収集する。映画の詳細を検索するのができます。 （開発中）
+          </p>
+          <div class="pb-3">
+            <img
+              src="../assets/nuxt.png"
+              alt="logo nuxt"
+              class="logo nuxt"
+              data-aos="fade-right"
+            />
+            <img
+              src="../assets/logo.png"
+              alt="logo vue"
+              class="logo vue"
+              data-aos="fade-right"
+            />
+            <img
+              src="../assets/ux.png"
+              alt="logo design designGroupo"
+              class="logo ux"
+              data-aos="fade-right"
+            />
+          </div>
+          <div v-if="eng">
+            
+            <a
+              href="https://github.com/adriben/movie-app"
+              class="btn btn-secondary ml-3"
+              >Check the code</a
+            >
+          </div>
+          <div v-else>
+            
+            <a
+              href="https://github.com/adriben/movie-app"
+              class="btn btn-secondary ml-3"
+              >コードに移動する</a
+            >
+          </div>
+        </div>
+      </div>
     </div>
     <div class="text-center" id="contact">
       <h2 v-if="eng">Contact ☎️</h2>
@@ -846,6 +964,9 @@ img {
   }
   .node {
     width: 6rem;
+  }
+  .nuxt{
+    width:9rem
   }
   .reservia {
     object-fit: cover;
