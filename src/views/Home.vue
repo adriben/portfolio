@@ -646,10 +646,10 @@
           </h5>
           <h5 class="card-title" v-else>映画検索エンジンを構築する</h5>
           <p class="card-text" v-if="eng">
-            Build the frontend of a Movie search engine like IMDB with Nuxt.js. Api call with axios to gather and display the datas, possibility to search and get details about a movie. (In developement)
+            Build the frontend of a Movie search engine like IMDB with Nuxt.js. Api call with axios to gather and display the datas, possibility to search and get details about a movie.
           </p>
           <p class="card-text" v-else>
-           Nuxt.jsを使用してIMDBのような映画検索エンジンのフロントエンドをします。 Apiは、axiosを使用してデータを収集する。映画の詳細を検索するのができます。 （開発中）
+           Nuxt.jsを使用してIMDBのような映画検索エンジンのフロントエンドをします。 Apiは、axiosを使用してデータを収集する。映画の詳細を検索するのができます。 
           </p>
           <div class="pb-3">
             <img
@@ -672,6 +672,11 @@
             />
           </div>
           <div v-if="eng">
+            <a
+              href="https://great-movie-app.herokuapp.com/"
+              class="btn btn-primary"
+              >Check the webpage</a
+            >
             
             <a
               href="https://github.com/adriben/movie-app"
@@ -680,6 +685,11 @@
             >
           </div>
           <div v-else>
+            <a
+              href="https://great-movie-app.herokuapp.com/"
+              class="btn btn-primary"
+              >Webページに移動する</a
+            >
             
             <a
               href="https://github.com/adriben/movie-app"
