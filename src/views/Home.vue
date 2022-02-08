@@ -572,67 +572,7 @@
         </div>
       </div>
 
-      <div class="card mb-5">
-        <img
-          class="card-img-top"
-          src="..\assets\cyclingFukuoka.png"
-          alt="Card image cap"
-        />
-        <div class="card-body">
-          <h5 class="card-title" v-if="eng">
-            Build an interactive site about cycling
-          </h5>
-          <h5 class="card-title" v-else>サイクリングに関するウェブページ</h5>
-          <p class="card-text" v-if="eng">
-            Creation of a interactive website for people passionated about cycling in Japan and Fukuoka. Api call to gather and get the weather and use of a database to store the maps.(In developement)
-          </p>
-          <p class="card-text" v-else>
-        福岡のサイクリングに人々のためのインタラクティブなウェブサイトの作成。 天気を収集して取得し、データベースを使用して地図を保存するためのApi呼び出し（開発中）
-          </p>
-          <div class="pb-3">
-            <img
-              src="../assets/logo.png"
-              alt="logo vue"
-              class="logo"
-              data-aos="fade-right"
-            />
-            <img
-              src="../assets/node.png"
-              alt="logo node"
-              class="logo node"
-              data-aos="fade-right"
-            />
-            <img
-              src="../assets/mongo.png"
-              alt="logo mongo"
-              class="logo mongo"
-              data-aos="fade-right"
-            />
-            <img
-              src="../assets/ux.png"
-              alt="logo design designGroupo"
-              class="logo ux"
-              data-aos="fade-right"
-            />
-          </div>
-          <div v-if="eng">
-            
-            <a
-              href="https://github.com/adriben/cycling-fukuoka"
-              class="btn btn-secondary ml-3"
-              >Check the code</a
-            >
-          </div>
-          <div v-else>
-            
-            <a
-              href="https://github.com/adriben/cycling-fukuoka"
-              class="btn btn-secondary ml-3"
-              >コードに移動する</a
-            >
-          </div>
-        </div>
-      </div>
+
 
       <div class="card mb-5">
         <img
@@ -699,7 +639,126 @@
           </div>
         </div>
       </div>
+            <div class="card mb-5">
+        <img
+          class="card-img-top"
+          src="..\assets\cyclingFukuoka.png"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title" v-if="eng">
+            Build an interactive site about cycling
+          </h5>
+          <h5 class="card-title" v-else>サイクリングに関するウェブページ</h5>
+          <p class="card-text" v-if="eng">
+            Creation of a interactive website for people passionated about cycling in Japan and Fukuoka. Api call to gather and get the weather and use of a database to store the maps.(In developement)
+          </p>
+          <p class="card-text" v-else>
+        福岡のサイクリングに人々のためのインタラクティブなウェブサイトの作成。 天気を収集して取得し、データベースを使用して地図を保存するためのApi呼び出し（開発中）
+          </p>
+          <div class="pb-3">
+            <img
+              src="../assets/logo.png"
+              alt="logo vue"
+              class="logo"
+              data-aos="fade-right"
+            />
+            <img
+              src="../assets/js.png"
+              alt="logo js"
+              class="logo js"
+              data-aos="fade-right"
+            />
+            
+            <img
+              src="../assets/ux.png"
+              alt="logo design designGroupo"
+              class="logo ux"
+              data-aos="fade-right"
+            />
+          </div>
+          <div v-if="eng">
+            
+            <a
+              href="https://github.com/adriben/cycling-fukuoka"
+              class="btn btn-secondary ml-3"
+              >Check the code</a
+            >
+          </div>
+          <div v-else>
+            
+            <a
+              href="https://github.com/adriben/cycling-fukuoka"
+              class="btn btn-secondary ml-3"
+              >コードに移動する</a
+            >
+          </div>
+        </div>
+      </div>
+            <div class="card mb-5">
+        <img
+          class="card-img-top"
+          src="..\assets\fukubook.png"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title" v-if="eng">
+            Build a full-stack EC website
+          </h5>
+          <h5 class="card-title" v-else>フルスタックのeコマースWebサイトを構築する</h5>
+          <p class="card-text" v-if="eng">
+            Creation of a website for people who are looking to exchange give or sell books in Fukuoka. With the help of a front-end framework (Vue.js), build a full-stack solution, including a NoSQL database. (In developement)
+          </p>
+          <p class="card-text" v-else>
+        福岡で外国の本を交換したり、交換したりする人のためのウェブサイトを作成。フロントエンドフレームワーク（Vue.js）を使用して、NoSQLデータベースを含むフルスタックソリューションを構築します。（開発中）
+          </p>
+          <div class="pb-3">
+            <img
+              src="../assets/logo.png"
+              alt="logo vue"
+              class="logo"
+              data-aos="fade-right"
+            />
+            <img
+              src="../assets/node.png"
+              alt="logo node"
+              class="logo node"
+              data-aos="fade-right"
+            />
+            <img
+              src="../assets/mongo.png"
+              alt="logo mongo"
+              class="logo mongo"
+              data-aos="fade-right"
+            />
+            <img
+              src="../assets/ux.png"
+              alt="logo design designGroupo"
+              class="logo ux"
+              data-aos="fade-right"
+            />
+          </div>
+          <div v-if="eng">
+            
+            <a
+              href="https://github.com/adriben/fukubook"
+              class="btn btn-secondary ml-3"
+              >Check the code</a
+            >
+          </div>
+          <div v-else>
+            
+            <a
+              href="https://github.com/adriben/fukubook"
+              class="btn btn-secondary ml-3"
+              >コードに移動する</a
+            >
+          </div>
+        </div>
+      </div>
     </div>
+
+    
     <div class="text-center" id="contact">
       <h2 v-if="eng">Contact ☎️</h2>
       <h2 v-else>連絡先 ☎️</h2>
