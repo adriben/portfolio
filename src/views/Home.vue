@@ -838,7 +838,6 @@ export default {
       }
     },
     changeLang() {
-      console.log("hello");
       this.eng = !this.eng;
     },
   },
