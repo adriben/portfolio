@@ -357,7 +357,7 @@
         />
         <div class="card-body">
           <h5 class="card-title" v-if="eng">
-            Build an e-commerce Website with JavaScript
+            Built an e-commerce Website with JavaScript
           </h5>
           <h5 class="card-title" v-else>
             JavaScriptを使用してeコマースWebサイトを構築する
@@ -441,11 +441,11 @@
         />
         <div class="card-body">
           <h5 class="card-title" v-if="eng">
-            Build a Secure API for a Review App
+            Built a Secure API for a Review App
           </h5>
           <h5 class="card-title" v-else>レビューアプリのAPIを構築する</h5>
           <p class="card-text" v-if="eng">
-            Build the back end for a new app, Hot Takes, where customers review
+            Built the back end for a new app, Hot Takes, where customers review
             specialty hot sauces. Use Node.js, Express, and MongoDB to build its
             NoSQL database. Secure customer data by applying the OWASP web
             security standards.
@@ -501,14 +501,14 @@
         />
         <div class="card-body">
           <h5 class="card-title" v-if="eng">
-            Build a Full-Stack Corporate Social Network
+            Built a Full-Stack Corporate Social Network
           </h5>
           <h5 class="card-title" v-else>
             フルスタックのソーシャルネットワークを構築する
           </h5>
           <p class="card-text" v-if="eng">
             Analyze a client’s needs to define the scope and features of a new
-            application. With the help of a front-end framework (Vue.js), build
+            application. With the help of a front-end framework (Vue.js), built
             a full-stack solution, including a SQL database. The user is able to
             share a post, like and comment.
           </p>
@@ -572,8 +572,6 @@
         </div>
       </div>
 
-
-
       <div class="card mb-5">
         <img
           class="card-img-top"
@@ -581,15 +579,16 @@
           alt="Card image cap"
         />
         <div class="card-body">
-          <h5 class="card-title" v-if="eng">
-            Build a Movie search engine
-          </h5>
+          <h5 class="card-title" v-if="eng">Built a Movie search engine</h5>
           <h5 class="card-title" v-else>映画検索エンジンを構築する</h5>
           <p class="card-text" v-if="eng">
-            Build the frontend of a Movie search engine like IMDB with Nuxt.js. Api call with axios to gather and display the datas, possibility to search and get details about a movie.
+            Built the frontend of a Movie search engine like IMDB with Nuxt.js.
+            Api call with axios to gather and display the datas, possibility to
+            search and get details about a movie.
           </p>
           <p class="card-text" v-else>
-           Nuxt.jsを使用してIMDBのような映画検索エンジンのフロントエンドをします。 Apiは、axiosを使用してデータを収集する。映画の詳細を検索するのができます。 
+            Nuxt.jsを使用してIMDBのような映画検索エンジンのフロントエンドをします。
+            Apiは、axiosを使用してデータを収集する。映画の詳細を検索するのができます。
           </p>
           <div class="pb-3">
             <img
@@ -617,7 +616,7 @@
               class="btn btn-primary"
               >Check the webpage</a
             >
-            
+
             <a
               href="https://github.com/adriben/movie-app"
               class="btn btn-secondary ml-3"
@@ -630,7 +629,7 @@
               class="btn btn-primary"
               >Webページに移動する</a
             >
-            
+
             <a
               href="https://github.com/adriben/movie-app"
               class="btn btn-secondary ml-3"
@@ -639,7 +638,7 @@
           </div>
         </div>
       </div>
-            <div class="card mb-5">
+      <div class="card mb-5">
         <img
           class="card-img-top"
           src="..\assets\cyclingFukuoka.png"
@@ -647,14 +646,17 @@
         />
         <div class="card-body">
           <h5 class="card-title" v-if="eng">
-            Build an interactive site about cycling
+            Built an interactive site about cycling
           </h5>
           <h5 class="card-title" v-else>サイクリングに関するウェブページ</h5>
           <p class="card-text" v-if="eng">
-            Creation of a interactive website for people passionated about cycling in Japan and Fukuoka. Api call to gather and get the weather and use of a database to store the maps.(In developement)
+            Creation of a interactive website for people passionated about
+            cycling in Japan and Fukuoka. Api call to gather and get the weather
+            and use of a database to store the maps.(In developement)
           </p>
           <p class="card-text" v-else>
-        福岡のサイクリングに人々のためのインタラクティブなウェブサイトの作成。 天気を収集して取得し、データベースを使用して地図を保存するためのApi呼び出し（開発中）
+            福岡のサイクリングに人々のためのインタラクティブなウェブサイトの作成。
+            天気を収集して取得し、データベースを使用して地図を保存するためのApi呼び出し（開発中）
           </p>
           <div class="pb-3">
             <img
@@ -669,7 +671,7 @@
               class="logo js"
               data-aos="fade-right"
             />
-            
+
             <img
               src="../assets/ux.png"
               alt="logo design designGroupo"
@@ -678,7 +680,6 @@
             />
           </div>
           <div v-if="eng">
-            
             <a
               href="https://github.com/adriben/cycling-fukuoka"
               class="btn btn-secondary ml-3"
@@ -686,7 +687,6 @@
             >
           </div>
           <div v-else>
-            
             <a
               href="https://github.com/adriben/cycling-fukuoka"
               class="btn btn-secondary ml-3"
@@ -695,22 +695,25 @@
           </div>
         </div>
       </div>
-            <div class="card mb-5">
+      <div class="card mb-5">
         <img
           class="card-img-top"
           src="..\assets\fukubook.png"
           alt="Card image cap"
         />
         <div class="card-body">
-          <h5 class="card-title" v-if="eng">
-            Build a full-stack EC website
+          <h5 class="card-title" v-if="eng">Built a full-stack EC website</h5>
+          <h5 class="card-title" v-else>
+            フルスタックのeコマースWebサイトを構築する
           </h5>
-          <h5 class="card-title" v-else>フルスタックのeコマースWebサイトを構築する</h5>
           <p class="card-text" v-if="eng">
-            Creation of a website for people who are looking to exchange give or sell books in Fukuoka. With the help of a front-end framework (Vue.js), build a full-stack solution, including a NoSQL database. (In developement)
+            Creation of a website for people who are looking to exchange give or
+            sell books in Fukuoka. With the help of a front-end framework
+            (Vue.js), built a full-stack solution, including a NoSQL database.
+            (In developement)
           </p>
           <p class="card-text" v-else>
-        福岡で外国の本を交換したり、交換したりする人のためのウェブサイトを作成。フロントエンドフレームワーク（Vue.js）を使用して、NoSQLデータベースを含むフルスタックソリューションを構築します。（開発中）
+            福岡で外国の本を交換したり、交換したりする人のためのウェブサイトを作成。フロントエンドフレームワーク（Vue.js）を使用して、NoSQLデータベースを含むフルスタックソリューションを構築します。（開発中）
           </p>
           <div class="pb-3">
             <img
@@ -739,7 +742,6 @@
             />
           </div>
           <div v-if="eng">
-            
             <a
               href="https://github.com/adriben/fukubook"
               class="btn btn-secondary ml-3"
@@ -747,7 +749,6 @@
             >
           </div>
           <div v-else>
-            
             <a
               href="https://github.com/adriben/fukubook"
               class="btn btn-secondary ml-3"
@@ -758,7 +759,6 @@
       </div>
     </div>
 
-    
     <div class="text-center" id="contact">
       <h2 v-if="eng">Contact ☎️</h2>
       <h2 v-else>連絡先 ☎️</h2>
@@ -992,7 +992,7 @@ img {
   transition: 400ms;
   @media screen and (max-width: 600px) {
     width: 100%;
-    a.btn-secondary{
+    a.btn-secondary {
       margin-top: 0.8rem;
     }
   }
@@ -1033,8 +1033,8 @@ img {
   .node {
     width: 6rem;
   }
-  .nuxt{
-    width:9rem
+  .nuxt {
+    width: 9rem;
   }
   .reservia {
     object-fit: cover;
