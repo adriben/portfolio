@@ -50,10 +50,18 @@
               </li>
               <li class="nav-item text-right active pl-5">
                 <a class="nav-link" href="" @click="changeLang" v-if="eng"
-                  >日本語
+                  ><img
+                    src="../assets/japan.png"
+                    alt="japanese flag"
+                    class="flag"
+                  />日本語
                 </a>
                 <a class="nav-link" href="" @click="changeLang" v-else
-                  >English
+                  ><img
+                    src="../assets/english.png"
+                    alt="japanese flag"
+                    class="flag"
+                  />English
                 </a>
               </li>
             </ul>
@@ -107,5 +115,8 @@ header {
   .navbar-expand-lg .navbar-collapse {
     justify-content: flex-end;
   }
+}
+.flag {
+  width: 2rem;
 }
 </style>
