@@ -609,6 +609,12 @@
               class="logo ux"
               data-aos="fade-right"
             />
+            <img
+              src="../assets/heroku.png"
+              alt="logo heroku"
+              class="logo heroku"
+              data-aos="fade-right"
+            />
           </div>
           <div v-if="eng">
             <a
@@ -1041,6 +1047,9 @@ img {
   }
   .nuxt {
     width: 9rem;
+  }
+  .heroku {
+    width: 3.5rem;
   }
   .reservia {
     object-fit: cover;
