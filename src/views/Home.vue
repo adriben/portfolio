@@ -723,6 +723,12 @@
               data-aos="fade-right"
             />
             <img
+              src="../assets/vuex.png"
+              alt="logo vue"
+              class="logo"
+              data-aos="fade-right"
+            />
+            <img
               src="../assets/node.png"
               alt="logo node"
               class="logo node"
