@@ -770,16 +770,17 @@
         </div>
       </div>
     </div>
-
-    <div class="text-center" id="contact">
-      <h2 v-if="eng">Contact ☎️</h2>
-      <h2 v-else>連絡先 ☎️</h2>
-      <Contact></Contact>
-    </div>
-    <div class="text-center mt-4">
-      <h3 v-if="eng">Hobbies 🏖</h3>
-      <h3 v-else>趣味 🏖</h3>
-      <Hobbies class="container mb-5"></Hobbies>
+    <div class="black pt-4 bg-dark">
+      <div class="text-center" id="contact">
+        <h2 v-if="eng">Contact ☎️</h2>
+        <h2 v-else>連絡先 ☎️</h2>
+        <Contact></Contact>
+      </div>
+      <div class="text-center mt-4">
+        <h3 v-if="eng">Hobbies 🏖</h3>
+        <h3 v-else>趣味 🏖</h3>
+        <Hobbies class="container pb-5"></Hobbies>
+      </div>
     </div>
   </div>
 </template>
@@ -877,9 +878,6 @@ export default {
 }
 .home {
   background-color: rgba(255, 255, 255, 0.685);
-  h2 {
-    color: #294446;
-  }
 }
 
 img {
@@ -897,9 +895,13 @@ img {
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 800px;
+  height: 750px;
   width: 100%;
   position: relative;
+
+  @media screen and (min-width: 1100px) {
+    border-radius: 0 0 35% 35%;
+  }
 
   .hero-text {
     position: absolute;
@@ -1103,7 +1105,13 @@ img {
 
   animation-iteration-count: infinite;
 }
+.black {
+  color: rgb(255, 255, 255);
 
+  @media screen and (min-width: 1100px) {
+    border-radius: 40% 40% 0 0;
+  }
+}
 @keyframes cursorBlink {
   49% {
     background-color: #fff;

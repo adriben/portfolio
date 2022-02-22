@@ -23,7 +23,7 @@
 
     <div class="contact-el">
       <a href="https://www.instagram.com/adribenete/">
-        <i class="fab fa-instagram-square"></i>
+        <img src="../assets/insta.png" alt="logo instagram" class="insta" />
         <p>Follow me on instagram</p>
       </a>
     </div>
@@ -57,7 +57,7 @@ export default {
     font-size: 130%;
     a {
       text-decoration: none;
-      color: black;
+      color: white;
     }
     i {
       font-size: 200%;
@@ -72,14 +72,18 @@ export default {
     color: rgb(218, 56, 56);
   }
   .fa-linkedin {
-    color: rgb(25, 25, 175);
+    color: rgb(17, 102, 238);
   }
   .fa-line {
     color: rgba(36, 201, 36, 0.808);
   }
-  .fa-instagram-square {
-    font-size: 40px;
-    color: rgb(165, 24, 165);
+  .insta {
+    width: 40px;
+    margin-top: 0.25rem;
+    &:hover {
+      transform: scale(1.3);
+      transition: 500ms;
+    }
   }
 }
 </style>
