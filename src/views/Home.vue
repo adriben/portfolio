@@ -900,7 +900,7 @@ img {
   position: relative;
 
   @media screen and (min-width: 1100px) {
-    border-radius: 0 0 35% 35%;
+    border-radius: 0 0 15% 15%;
   }
 
   .hero-text {
