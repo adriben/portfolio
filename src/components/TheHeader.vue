@@ -94,8 +94,9 @@ export default {
 header {
   font-size: 130%;
   position: fixed;
-  z-index: 4;
+  z-index: 20;
   width: 100%;
+  border-radius: 0 0 10% 10%;
 
   a {
     color: #ffff;

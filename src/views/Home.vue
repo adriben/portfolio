@@ -3,6 +3,12 @@
     <TheHeader class="mb-4"></TheHeader>
 
     <section class="banniere col-12 hero">
+      <img
+        src="../assets/heropic.png"
+        alt="developer web png"
+        class="devWebP"
+      />
+
       <div class="hero-text">
         <p v-if="eng">Hi, my name is Adrien</p>
         <p v-else>Adrienと申します。</p>
@@ -21,6 +27,17 @@
           <span class="cursor" :class="{ typing: typeStatus }">&nbsp;</span>
         </h1>
       </div>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        class="svg"
+      >
+        <path
+          fill="#fff"
+          fill-opacity="1"
+          d="M0,192L48,170.7C96,149,192,107,288,122.7C384,139,480,213,576,229.3C672,245,768,203,864,192C960,181,1056,203,1152,224C1248,245,1344,267,1392,277.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
     </section>
 
     <div class="container" id="aboutMe">
@@ -890,29 +907,43 @@ img {
 
 .hero {
   color: white;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../assets/shutterstock_1122339353.jpg");
+  background-image: linear-gradient(
+    rgba(23, 142, 253, 0.562),
+    rgb(9, 164, 179)
+  );
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 750px;
+  height: 600px;
   width: 100%;
   position: relative;
-
-  @media screen and (min-width: 1100px) {
-    border-radius: 0 0 15% 15%;
+  @media screen and (max-width: 900px) {
+    height: 650px;
+  }
+  @media screen and (max-width: 450px) {
+    height: 600px;
   }
 
   .hero-text {
     position: absolute;
     align-items: center;
-    top: 30%;
-    left: 60%;
-    @media screen and (max-width: 900px) {
-      left: 200px;
+    top: 40%;
+    left: 45%;
+    @media screen and (max-width: 1100px) {
+      top: 30%;
+      left: 55%;
     }
-    @media screen and (max-width: 560px) {
-      left: 1px;
+    @media screen and (max-width: 900px) {
+      top: 20%;
+      left: 20%;
+    }
+    @media screen and (max-width: 620px) {
+      top: 20%;
+      left: 10%;
+    }
+    @media screen and (max-width: 400px) {
+      top: 30%;
+      left: 0%;
     }
     p {
       position: absolute;
@@ -940,11 +971,74 @@ img {
     }
   }
 }
+.devWebP {
+  width: 27rem;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  z-index: 10;
+  @media screen and (max-width: 900px) {
+    width: 20rem;
+    top: 50%;
+    left: 20%;
+  }
+
+  @media screen and (max-width: 580px) {
+    top: 50%;
+    left: 20%;
+  }
+  @media screen and (max-width: 400px) {
+    top: 60%;
+    left: 10%;
+    width: 15rem;
+  }
+  @media screen and (max-width: 300px) {
+    top: 60%;
+    left: 0%;
+    width: 15rem;
+  }
+}
+.svg {
+  position: absolute;
+  top: 40%;
+  left: 0%;
+  z-index: 6;
+  @media screen and (max-width: 1640px) {
+    top: 50%;
+    left: 0%;
+  }
+  @media screen and (max-width: 1440px) {
+    top: 60%;
+    left: 0%;
+  }
+  @media screen and (max-width: 1100px) {
+    top: 70%;
+    left: 0%;
+  }
+  @media screen and (max-width: 900px) {
+    top: 80%;
+    left: 0%;
+  }
+  @media screen and (max-width: 650px) {
+    top: 85%;
+    left: 0%;
+  }
+  @media screen and (max-width: 470px) {
+    top: 90%;
+    left: 0%;
+  }
+  @media screen and (max-width: 300px) {
+    top: 92%;
+    left: 0%;
+  }
+}
 .banner {
   height: 700px;
 }
 #aboutMe {
   position: relative;
+  z-index: 12;
+
   @media screen and (max-width: 1400px) {
     padding-top: 4rem;
   }
@@ -957,6 +1051,7 @@ img {
   position: absolute;
   left: -120px;
   top: 50px;
+  z-index: 11;
   @media screen and (max-width: 1400px) {
     left: 40%;
     margin: 0 auto;
