@@ -908,8 +908,8 @@ img {
 .hero {
   color: white;
   background-image: linear-gradient(
-    rgba(23, 142, 253, 0.562),
-    rgb(9, 164, 179)
+    rgb(9, 164, 179),
+    rgba(26, 108, 202, 0.842)
   );
   background-position: top;
   background-repeat: no-repeat;
@@ -1024,11 +1024,11 @@ img {
     left: 0%;
   }
   @media screen and (max-width: 470px) {
-    top: 90%;
+    top: 87%;
     left: 0%;
   }
-  @media screen and (max-width: 300px) {
-    top: 92%;
+  @media screen and (max-width: 365px) {
+    top: 90%;
     left: 0%;
   }
 }
@@ -1104,6 +1104,14 @@ img {
     a.btn-secondary {
       margin-top: 0.8rem;
     }
+    @media screen and (max-width: 400px) {
+      width: 100%;
+      border-radius: 0px;
+      box-shadow: none;
+      a.btn-secondary {
+        margin-top: 0.8rem;
+      }
+    }
   }
 
   &:hover {
@@ -1120,6 +1128,9 @@ img {
     height: 29rem;
     object-fit: cover;
     border-bottom: 1px solid rgba(128, 128, 128, 0.308);
+    @media screen and (max-width: 400px) {
+      border-radius: 0px;
+    }
   }
   .logo {
     width: 60px;
