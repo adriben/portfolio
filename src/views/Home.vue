@@ -1028,7 +1028,7 @@ img {
     left: 0%;
   }
   @media screen and (max-width: 365px) {
-    top: 90%;
+    top: 92%;
     left: 0%;
   }
 }
