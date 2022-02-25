@@ -172,7 +172,7 @@
       <div class="card mb-5">
         <img
           class="card-img-top reservia"
-          src="..\assets\reservia.png"
+          src="..\assets\reservia.jpg"
           alt="Card image cap"
         />
         <div class="card-body">
@@ -234,7 +234,7 @@
       <div class="card mb-5">
         <img
           class="card-img-top ohmyfood"
-          src="..\assets\ohmyfood.png"
+          src="..\assets\ohmyfood.jpg"
           alt="Card image cap"
         />
         <div class="card-body">
@@ -302,7 +302,7 @@
       <div class="card mb-5">
         <img
           class="card-img-top"
-          src="..\assets\lachouetteagence.png"
+          src="..\assets\lachouetteagence.jpg"
           alt="Card image cap"
         />
         <div class="card-body">
@@ -369,7 +369,7 @@
       <div class="card mb-5">
         <img
           class="card-img-top"
-          src="..\assets\orinocamera.png"
+          src="..\assets\orinocamera.jpg"
           alt="Card image cap"
         />
         <div class="card-body">
@@ -453,7 +453,7 @@
       <div class="card mb-5">
         <img
           class="card-img-top"
-          src="..\assets\hotsauce.png"
+          src="..\assets\hotsauce.jpg"
           alt="Card image cap"
         />
         <div class="card-body">
@@ -513,7 +513,7 @@
       <div class="card mb-5">
         <img
           class="card-img-top"
-          src="..\assets\groupomania.png"
+          src="..\assets\groupomania.jpg"
           alt="Card image cap"
         />
         <div class="card-body">
@@ -592,7 +592,7 @@
       <div class="card mb-5">
         <img
           class="card-img-top"
-          src="..\assets\movieApp.png"
+          src="..\assets\movieApp.jpg"
           alt="Card image cap"
         />
         <div class="card-body">
@@ -664,7 +664,7 @@
       <div class="card mb-5">
         <img
           class="card-img-top"
-          src="..\assets\cyclingFukuoka.png"
+          src="..\assets\cyclingFukuoka.jpg"
           alt="Card image cap"
         />
         <div class="card-body">
@@ -721,7 +721,7 @@
       <div class="card mb-5">
         <img
           class="card-img-top"
-          src="..\assets\fukubook.png"
+          src="..\assets\fukubook.jpg"
           alt="Card image cap"
         />
         <div class="card-body">
