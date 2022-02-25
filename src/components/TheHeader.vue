@@ -49,7 +49,7 @@
                 >
               </li>
               <li class="nav-item text-right active pl-5">
-                <a class="nav-link" href="" @click="changeLang" v-if="eng"
+                <a class="nav-link" href="#" @click="changeLang" v-if="eng"
                   ><img
                     src="../assets/japan.png"
                     alt="japanese flag"
