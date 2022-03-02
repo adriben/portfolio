@@ -1082,7 +1082,7 @@ img {
 }
 
 .btn-secondary {
-  background-color: #d85c3ae0;
+  background-color: #d85c3a;
 }
 
 .works {
